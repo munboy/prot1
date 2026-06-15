@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Вакансії | Кадрове агентство «Кар'єра»</title>
+  <meta name="description" content="Каталог актуальних вакансій у Дніпрі та Україні. Робота в IT, продажах, виробництві, фінансах. Знайдіть свою ідеальну роботу разом з агентством Кар'єра.">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/layout.css">
+  <link rel="stylesheet" href="styles/components.css">
+  <link rel="stylesheet" href="styles/pages.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">К</div>
+        <span>КАР'ЄРА</span>
+      </a>
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link">Головна</a>
+        <a href="employers.html" class="nav-link">Роботодавцям</a>
+        <a href="candidates.html" class="nav-link">Кандидатам</a>
+        <a href="vacancies.html" class="nav-link active">Вакансії</a>
+        <a href="about.html" class="nav-link">Про нас</a>
+        <a href="contacts.html" class="nav-link">Контакти</a>
+        <a href="admin.html" class="nav-link">Адмін-панель</a>
+      </nav>
+      <div class="header-cta">
+        <a href="employers.html#order-form" class="btn btn-secondary">Замовити персонал</a>
+      </div>
+      <button class="hamburger" aria-label="Відкрити меню">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+    </div>
+  </header>
+
+  <!-- MOBILE NAVIGATION OVERLAY -->
+  <div class="mobile-nav">
+    <ul class="mobile-menu">
+      <li><a href="index.html" class="nav-link">Головна</a></li>
+      <li><a href="employers.html" class="nav-link">Роботодавцям</a></li>
+      <li><a href="candidates.html" class="nav-link">Кандидатам</a></li>
+      <li><a href="vacancies.html" class="nav-link active">Вакансії</a></li>
+      <li><a href="about.html" class="nav-link">Про нас</a></li>
+      <li><a href="contacts.html" class="nav-link">Контакти</a></li>
+      <li><a href="admin.html" class="nav-link">Адмін-панель</a></li>
+    </ul>
+    <a href="employers.html#order-form" class="btn btn-primary">Замовити персонал</a>
+  </div>
+
+  <!-- HERO FOR VACANCIES -->
+  <section class="hero hero-alt" style="padding-bottom: 3rem;">
+    <div class="container">
+      <div class="hero-content reveal text-center" style="max-width: 800px; margin: 0 auto;">
+        <span class="hero-tagline">Пропозиції роботи</span>
+        <h1 class="hero-title">Актуальні вакансії наших партнерів</h1>
+        <p class="hero-desc lead">Ми регулярно оновлюємо базу вакансій та пропонуємо перевірені пропозиції від кращих роботодавців з офіційним працевлаштуванням.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FILTER & LIST SECTION -->
+  <section class="section">
+    <div class="container">
+      <!-- Filter bar -->
+      <div class="filter-bar reveal">
+        <button class="filter-btn is-active" data-filter="all">Всі вакансії</button>
+        <button class="filter-btn" data-filter="it">IT та розробка</button>
+        <button class="filter-btn" data-filter="sales">Маркетинг та продажі</button>
+        <button class="filter-btn" data-filter="production">Виробництво та логістика</button>
+        <button class="filter-btn" data-filter="management">ТОП-менеджмент</button>
+        <button class="filter-btn" data-filter="finance">Фінанси та облік</button>
+      </div>
+
+      <!-- Vacancy grid -->
+      <div class="grid-2" id="vacancy-grid" style="transition: all 0.3s ease;">
+        
+        <!-- Vacancy 1: IT -->
+        <div class="card card-vacancy vacancy-card-item reveal" data-category="it">
+          <span class="vacancy-badge">IT-Сфера</span>
+          <h3 class="card-title" style="margin-top: 0.5rem; margin-bottom: 0.5rem;">Senior DevOps Engineer</h3>
+          <div class="vacancy-salary">120 000 — 150 000 грн</div>
+          <div class="vacancy-meta">
+            <span class="vacancy-meta-item">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><circle cx="12" cy="11" r="3"/></svg>
+              Дніпро / Віддалено
+            </span>
+            <span class="vacancy-meta-item">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              Повна зайнятість
+            </span>
+          </div>
+          <p class="card-text">Шукаємо досвідченого DevOps інженера для оптимізації та підтримки хмарної інфраструктури (AWS/Kubernetes) великого продуктового сервісу. Досвід від 4 років.</p>
+          <div style="margin-top: 1.5rem;">
+            <a href="resume.html?vacancy=Senior+DevOps+Engineer" class="btn btn-primary">Відгукнутися</a>
+          </div>
+        </div>
+
+        <!-- Vacancy 2: Sales -->
+        <div class="card card-vacancy vacancy-card-item reveal" data-category="sales" style="transition-delay: 0.1s;">
+          <span class="vacancy-badge">Продажі</span>
+          <h3 class="card-title" style="margin-top: 0.5rem; margin-bottom: 0.5rem;">Керівник відділу продажів (B2B)</h3>
+          <div class="vacancy-salary">45 000 — 60 000 грн + %</div>
+          <div class="vacancy-meta">
+            <span class="vacancy-meta-item">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><circle cx="12" cy="11" r="3"/></svg>
+              Дніпро
+            </span>
+            <span class="vacancy-meta-item">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              Повна зайнятість
+            </span>
+          </div>
+          <p class="card-text">Запрошуємо фахівця для побудови та оптимізації процесів продажів у великій дистриб'юторській компанії (промислова сировина). Досвід управління відділом від 2 років.</p>
+          <div style="margin-top: 1.5rem;">
+            <a href="resume.html?vacancy=Head+of+B2B+Sales" class="btn btn-primary">Відгукнутися</a>
+          </div>
+        </div>
+
+        <!-- Vacancy 3: Production -->
+        <div class="card card-vacancy vacancy-card-item reveal" data-category="production">
+          <span class="vacancy-badge">Виробництво</span>
+          <h3 class="card-title" style="margin-top: 0.5rem; margin-bottom: 0.5rem;">Головний інженер виробництва</h3>
+          <div class="vacancy-salary">50 000 — 70 000 грн</div>
+          <div class="vacancy-meta">
+            <span class="vacancy-meta-item">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><circle cx="12" cy="11" r="3"/></svg>
+              Дніпро (лівий берег)
+            </span>
+            <span class="vacancy-meta-item">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              Повна зайнятість
+            </span>
+          </div>
+          <p class="card-text">Управління виробничим цехом металоконструкцій, планування завантаження обладнання, оптимізація витрат та контроль якості продукції. Профільна освіта.</p>
+          <div style="margin-top: 1.5rem;">
+            <a href="resume.html?vacancy=Chief+Production+Engineer" class="btn btn-primary">Відгукнутися</a>
+          </div>
+        </div>
+
+        <!-- Vacancy 4: Management -->
+        <div class="card card-vacancy vacancy-card-item reveal" data-category="management" style="transition-delay: 0.1s;">
+          <span class="vacancy-badge">Керівництво</span>
+          <h3 class="card-title" style="margin-top: 0.5rem; margin-bottom: 0.5rem;">Операційний директор (COO)</h3>
+          <div class="vacancy-salary">80 000 — 100 000 грн</div>
+          <div class="vacancy-meta">
+            <span class="vacancy-meta-item">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><circle cx="12" cy="11" r="3"/></svg>
+              Дніпро
+            </span>
+            <span class="vacancy-meta-item">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              Повна зайнятість
+            </span>
+          </div>
+          <p class="card-text">Шукаємо лідера для оптимізації внутрішньої операційної структури мережі приватних медичних центрів. Успішний досвід управління штатом від 50+ осіб обов'язковий.</p>
+          <div style="margin-top: 1.5rem;">
+            <a href="resume.html?vacancy=COO+Medical+Centers" class="btn btn-primary">Відгукнутися</a>
+          </div>
+        </div>
+
+        <!-- Vacancy 5: IT -->
+        <div class="card card-vacancy vacancy-card-item reveal" data-category="it">
+          <span class="vacancy-badge">IT-Сфера</span>
+          <h3 class="card-title" style="margin-top: 0.5rem; margin-bottom: 0.5rem;">Product Owner (SaaS Project)</h3>
+          <div class="vacancy-salary">90 000 — 110 000 грн</div>
+          <div class="vacancy-meta">
+            <span class="vacancy-meta-item">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><circle cx="12" cy="11" r="3"/></svg>
+              Віддалено
+            </span>
+            <span class="vacancy-meta-item">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              Повна зайнятість
+            </span>
+          </div>
+          <p class="card-text">Управління беклогом продукту, дослідження потреб користувачів (CusDev), аналіз продуктових метрик та тісна взаємодія з командою розробки.</p>
+          <div style="margin-top: 1.5rem;">
+            <a href="resume.html?vacancy=Product+Owner" class="btn btn-primary">Відгукнутися</a>
+          </div>
+        </div>
+
+        <!-- Vacancy 6: Finance -->
+        <div class="card card-vacancy vacancy-card-item reveal" data-category="finance" style="transition-delay: 0.1s;">
+          <span class="vacancy-badge">Фінанси</span>
+          <h3 class="card-title" style="margin-top: 0.5rem; margin-bottom: 0.5rem;">Фінансовий аналітик</h3>
+          <div class="vacancy-salary">35 000 — 45 000 грн</div>
+          <div class="vacancy-meta">
+            <span class="vacancy-meta-item">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><circle cx="12" cy="11" r="3"/></svg>
+              Дніпро
+            </span>
+            <span class="vacancy-meta-item">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              Повна зайнятість
+            </span>
+          </div>
+          <p class="card-text">Аналіз фінансових результатів підприємства, розрахунок собівартості продукції, підготовка бюджетів (BDG/CF) та управлінської звітності.</p>
+          <div style="margin-top: 1.5rem;">
+            <a href="resume.html?vacancy=Financial+Analyst" class="btn btn-primary">Відгукнутися</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">КАР'ЄРА</div>
+          <p class="footer-desc">Кадрове рекрутингове агентство «Кар'єра» — ваш надійний партнер у сфері пошуку та підбору персоналу з 2001 року. Допомагаємо будувати успішний бізнес та успішну кар'єру.</p>
+        </div>
+        <div>
+          <h4 class="footer-heading">Послуги</h4>
+          <ul class="footer-links">
+            <li><a href="employers.html">Роботодавцям</a></li>
+            <li><a href="candidates.html">Кандидатам</a></li>
+            <li><a href="vacancies.html">Наші вакансії</a></li>
+            <li><a href="resume.html">Надіслати резюме</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">Компанія</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">Про нас</a></li>
+            <li><a href="documents.html">Офіційні документи</a></li>
+            <li><a href="contacts.html">Контакти</a></li>
+            <li><a href="admin.html">Для команди (Адмін)</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">Контакти</h4>
+          <ul class="footer-contact">
+            <li>
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+              <span>м. Дніпро,<br>вул. І. Акінфієва, 18, офіс 301</span>
+            </li>
+            <li>
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+              <a href="tel:+380990512965">+38 (099) 051-29-65</a>
+            </li>
+            <li>
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+              <a href="mailto:soldatnikova@gmail.com">soldatnikova@gmail.com</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2001-2026 Кадрове агентство «Кар'єра». Всі права захищені.</p>
+        <div class="footer-bottom-links">
+          <a href="documents.html">Політика конфіденційності</a>
+          <a href="documents.html">Договір оферты</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+  <script>
+    // Autofill vacancy input in URL query if present (used when coming from this page to resume.html)
+    // Handled by standard anchor behavior, but can be improved in JS.
+  </script>
+</body>
+</html>
+

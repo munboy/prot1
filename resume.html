@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Надіслати резюме | Кадрове агентство «Кар'єра»</title>
+  <meta name="description" content="Надішліть своє резюме до кадрового агентства Кар'єра. Ваша анкета буде миттєво надіслана на нашу електронну пошту для розгляду рекрутерами.">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/layout.css">
+  <link rel="stylesheet" href="styles/components.css">
+  <link rel="stylesheet" href="styles/pages.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">К</div>
+        <span>КАР'ЄРА</span>
+      </a>
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link">Головна</a>
+        <a href="employers.html" class="nav-link">Роботодавцям</a>
+        <a href="candidates.html" class="nav-link">Кандидатам</a>
+        <a href="vacancies.html" class="nav-link">Вакансії</a>
+        <a href="about.html" class="nav-link">Про нас</a>
+        <a href="contacts.html" class="nav-link">Контакти</a>
+        <a href="admin.html" class="nav-link">Адмін-панель</a>
+      </nav>
+      <div class="header-cta">
+        <a href="employers.html#order-form" class="btn btn-secondary">Замовити персонал</a>
+      </div>
+      <button class="hamburger" aria-label="Відкрити меню">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+    </div>
+  </header>
+
+  <!-- MOBILE NAVIGATION OVERLAY -->
+  <div class="mobile-nav">
+    <ul class="mobile-menu">
+      <li><a href="index.html" class="nav-link">Головна</a></li>
+      <li><a href="employers.html" class="nav-link">Роботодавцям</a></li>
+      <li><a href="candidates.html" class="nav-link">Кандидатам</a></li>
+      <li><a href="vacancies.html" class="nav-link">Вакансії</a></li>
+      <li><a href="about.html" class="nav-link">Про нас</a></li>
+      <li><a href="contacts.html" class="nav-link">Контакти</a></li>
+      <li><a href="admin.html" class="nav-link">Адмін-панель</a></li>
+    </ul>
+    <a href="employers.html#order-form" class="btn btn-primary">Замовити персонал</a>
+  </div>
+
+  <!-- HERO SECTION -->
+  <section class="hero hero-alt" style="padding-bottom: 3rem;">
+    <div class="container text-center" style="max-width: 800px;">
+      <span class="hero-tagline">Надсилання анкети</span>
+      <h1 class="hero-title">Заповніть анкету шукача</h1>
+      <p class="hero-desc lead">Ваша анкета та резюме будуть надіслані на нашу робочу електронну пошту. Рекрутери зв'яжуться з вами у разі появи вакансії, яка відповідає вашому профілю.</p>
+    </div>
+  </section>
+
+  <!-- RESUME FORM SECTION -->
+  <section class="section">
+    <div class="container" style="max-width: 750px;">
+      <form class="card reveal" id="resume-submission-form">
+        <!-- Name and Phone -->
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label" for="resume-name">Прізвище та ім'я</label>
+            <input type="text" id="resume-name" class="form-control" placeholder="Іван Ковальчук" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="resume-phone">Телефон</label>
+            <input type="tel" id="resume-phone" class="form-control" placeholder="+380 50 123 45 67" required>
+          </div>
+        </div>
+
+        <!-- Email and Position -->
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label" for="resume-email">Email</label>
+            <input type="email" id="resume-email" class="form-control" placeholder="ivan.koval@gmail.com" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="resume-position">Бажана посада</label>
+            <input type="text" id="resume-position" class="form-control" placeholder="Керівник відділу продажів / Системний адміністратор" required>
+          </div>
+        </div>
+
+        <!-- Education dropdown -->
+        <div class="form-group">
+          <label class="form-label" for="resume-education">Рівень освіти</label>
+          <select id="resume-education" class="form-control" required style="appearance: none; background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%231A2A44%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E'); background-repeat: no-repeat; background-position: right 1.1rem center; background-size: 0.65rem auto; padding-right: 2.5rem;">
+            <option value="" disabled selected>Оберіть освіту</option>
+            <option value="higher">Вища (магістр, спеціаліст, бакалавр)</option>
+            <option value="incomplete-higher">Незакінчена вища</option>
+            <option value="specialized">Середня спеціальна / коледж</option>
+            <option value="secondary">Середня загальна</option>
+          </select>
+        </div>
+
+        <!-- Professional Experience summary -->
+        <div class="form-group">
+          <label class="form-label" for="resume-experience">Опис професійного досвіду та навичок</label>
+          <textarea id="resume-experience" class="form-control" placeholder="Розкажіть про ваші ключові обов'язки, досягнення на попередніх місцях роботи та технології, якими володієте." required></textarea>
+        </div>
+
+        <!-- Drag-and-drop file upload placeholder -->
+        <div class="form-group">
+          <label class="form-label">Прикріпити резюме (PDF, DOCX, DOC)</label>
+          <div class="file-upload">
+            <div class="file-upload-icon">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <p class="file-upload-text">Перетягніть файл сюди або <span>натисніть для вибору</span></p>
+            <p class="file-upload-hint">Максимальний розмір файлу — 5 MB</p>
+          </div>
+          <input type="file" id="resume-file" style="display: none;" accept=".pdf,.doc,.docx" required>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%;">Надіслати анкету консультанту</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">КАР'ЄРА</div>
+          <p class="footer-desc">Кадрове рекрутингове агентство «Кар'єра» — ваш надійний партнер у сфері пошуку та підбору персоналу з 2001 року. Допомагаємо будувати успішний бізнес та успішну кар'єру.</p>
+        </div>
+        <div>
+          <h4 class="footer-heading">Послуги</h4>
+          <ul class="footer-links">
+            <li><a href="employers.html">Роботодавцям</a></li>
+            <li><a href="candidates.html">Кандидатам</a></li>
+            <li><a href="vacancies.html">Наші вакансії</a></li>
+            <li><a href="resume.html">Надіслати резюме</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">Компанія</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">Про нас</a></li>
+            <li><a href="documents.html">Офіційні документи</a></li>
+            <li><a href="contacts.html">Контакти</a></li>
+            <li><a href="admin.html">Для команди (Адмін)</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">Контакти</h4>
+          <ul class="footer-contact">
+            <li>
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+              <span>м. Дніпро,<br>вул. І. Акінфієва, 18, офіс 301</span>
+            </li>
+            <li>
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+              <a href="tel:+380990512965">+38 (099) 051-29-65</a>
+            </li>
+            <li>
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+              <a href="mailto:soldatnikova@gmail.com">soldatnikova@gmail.com</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2001-2026 Кадрове агентство «Кар'єра». Всі права захищені.</p>
+        <div class="footer-bottom-links">
+          <a href="documents.html">Політика конфіденційності</a>
+          <a href="documents.html">Договір оферты</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Auto-populate vacancy title if passed in query param
+      const urlParams = new URLSearchParams(window.location.search);
+      const vacancyName = urlParams.get('vacancy');
+      if (vacancyName) {
+        const positionInput = document.getElementById('resume-position');
+        if (positionInput) {
+          positionInput.value = vacancyName;
+        }
+      }
+    });
+  </script>
+</body>
+</html>
+

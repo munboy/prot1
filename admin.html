@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Адмін-панель | Кадрове агентство «Кар'єра»</title>
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/layout.css">
+  <link rel="stylesheet" href="styles/components.css">
+  <link rel="stylesheet" href="styles/pages.css">
+</head>
+<body>
+
+  <div class="admin-layout">
+    
+    <!-- ADMIN SIDEBAR -->
+    <aside class="admin-sidebar">
+      <div class="admin-brand">
+        КАР'ЄРА <span>ADMIN</span>
+      </div>
+      
+      <ul class="admin-nav" id="admin-nav-tabs">
+        <li class="admin-nav-item active" data-tab="dashboard">
+          <a href="#dashboard">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M4 6a2 2 0 012-2h2a2 2 0 012 2v4a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v4a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v4a2 2 0 01-2 2H6a2 2 0 01-2-2v-4zM14 16a2 2 0 012-2h2a2 2 0 012 2v4a2 2 0 01-2 2h-2a2 2 0 01-2-2v-4z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+            Панель приладів
+          </a>
+        </li>
+        <li class="admin-nav-item" data-tab="vacancies">
+          <a href="#vacancies">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+            Конструктор вакансій
+          </a>
+        </li>
+        <li class="admin-nav-item" data-tab="contacts">
+          <a href="#contacts">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+            Редагування контактів
+          </a>
+        </li>
+        <li class="admin-nav-item" data-tab="pages">
+          <a href="#pages">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M11 5H6a2 2 0 00-2-2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+            Конструктор сторінок
+          </a>
+        </li>
+        <li class="admin-nav-item" style="margin-top: auto; border-top: 1px solid rgba(255, 255, 255, 0.1); padding-top: 1rem;">
+          <a href="index.html">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M10 19l-7-7m0 0l7-7m-7 7h18" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+            Повернутися на сайт
+          </a>
+        </li>
+      </ul>
+    </aside>
+
+    <!-- ADMIN MAIN CONTENT -->
+    <main class="admin-main">
+      
+      <!-- TOP BAR -->
+      <div class="admin-topbar">
+        <div>
+          <h1 style="font-family: var(--font-sans); font-size: 1.75rem; font-weight: 700; color: var(--color-primary);">Панель керування</h1>
+          <p style="color: var(--color-text-muted); font-size: 0.9rem;">Вітаємо у системі управління кадровим агентством «Кар'єра»</p>
+        </div>
+        <div class="admin-user">
+          <div class="text-right">
+            <strong style="display: block; font-size: 0.9rem; color: var(--color-primary);">Олена Солдатнікова</strong>
+            <span style="font-size: 0.75rem; color: var(--color-text-muted);">Адміністратор</span>
+          </div>
+          <div class="admin-avatar">ОС</div>
+        </div>
+      </div>
+
+      <!-- TAB Content: Dashboard -->
+      <div id="tab-dashboard" class="admin-tab-content active">
+        <!-- GDPR DATABASE-LESS WARNING BANNER -->
+        <div style="background-color: #E0F2FE; border-left: 4px solid #0284C7; padding: 1.25rem 1.5rem; border-radius: var(--radius); margin-bottom: 2.5rem; display: flex; gap: 1rem; align-items: flex-start; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);">
+          <svg style="width: 24px; height: 24px; color: #0284C7; flex-shrink: 0; margin-top: 2px;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          </svg>
+          <div>
+            <h4 style="color: #0369A1; font-size: 0.95rem; font-weight: 700; margin-bottom: 0.25rem;">Конфіденційність даних (GDPR-ready)</h4>
+            <p style="color: #0369A1; font-size: 0.85rem; margin: 0; line-height: 1.5;">
+              Система працює у <strong>безбазовому режимі</strong>. Жодні резюме, персональні дані або заявки не зберігаються у базі даних на веб-сервері. Усі звернення з форм миттєво перенаправляються на поштові скриньки рекрутерів. Нижче наведено журнал стану надсилання електронної пошти.
+            </p>
+          </div>
+        </div>
+
+        <!-- STATS GRID -->
+        <div class="admin-stats-grid">
+          <div class="admin-stat-card">
+            <div class="admin-stat-info">
+              <h4>Активні вакансії</h4>
+              <div class="admin-stat-value" id="stats-vacancies-count">24</div>
+            </div>
+            <div class="admin-stat-icon">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+            </div>
+          </div>
+          <div class="admin-stat-card">
+            <div class="admin-stat-info">
+              <h4>Сповіщень надіслано</h4>
+              <div class="admin-stat-value">842</div>
+            </div>
+            <div class="admin-stat-icon">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+            </div>
+          </div>
+          <div class="admin-stat-card">
+            <div class="admin-stat-info">
+              <h4>Успішність доставки</h4>
+              <div class="admin-stat-value">99.8%</div>
+            </div>
+            <div class="admin-stat-icon">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+            </div>
+          </div>
+          <div class="admin-stat-card">
+            <div class="admin-stat-info">
+              <h4>Час доставки</h4>
+              <div class="admin-stat-value">&lt; 2 сек</div>
+            </div>
+            <div class="admin-stat-icon">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            </div>
+          </div>
+        </div>
+
+        <!-- SECTION 1: CANDIDATE SUBMISSIONS TO EMAIL -->
+        <div class="admin-section-card">
+          <div class="admin-card-header">
+            <h3>Лог надісланих резюме від шукачів (B2C)</h3>
+            <span style="font-size: 0.8rem; color: var(--color-text-muted);">Дані перенаправлені на пошту рекрутерів</span>
+          </div>
+          
+          <div class="admin-table-wrapper">
+            <table class="admin-table">
+              <thead>
+                <tr>
+                  <th>Відправник (Кандидат)</th>
+                  <th>Отримувач (Email)</th>
+                  <th>Тема листа (Сповіщення)</th>
+                  <th>Час відправки</th>
+                  <th>Статус доставки</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Коваленко Олександр</strong> (DevOps)</td>
+                  <td>hr-it@kariera.dp.ua</td>
+                  <td>[Резюме] DevOps Engineer — kovalenko_cv.pdf</td>
+                  <td>15.06.2026 12:45</td>
+                  <td><span class="admin-badge admin-badge-active">Доставлено</span></td>
+                </tr>
+                <tr>
+                  <td><strong>Шевченко Тетяна</strong> (Фінанси)</td>
+                  <td>hr-finance@kariera.dp.ua</td>
+                  <td>[Резюме] Фінансовий аналітик — shevchenko_cv.docx</td>
+                  <td>14.06.2026 17:30</td>
+                  <td><span class="admin-badge admin-badge-active">Доставлено</span></td>
+                </tr>
+                <tr>
+                  <td><strong>Мельник Ярослав</strong> (Управління)</td>
+                  <td>hr-mgmt@kariera.dp.ua</td>
+                  <td>[Резюме] Product Owner — melnik_po.pdf</td>
+                  <td>13.06.2026 09:15</td>
+                  <td><span class="admin-badge admin-badge-active">Доставлено</span></td>
+                </tr>
+                <tr>
+                  <td><strong>Лисенко Дмитро</strong> (IT-інфраструктура)</td>
+                  <td>hr-it@kariera.dp.ua</td>
+                  <td>[Резюме] Системний адміністратор — lysenko_sys.pdf</td>
+                  <td>11.06.2026 14:10</td>
+                  <td><span class="admin-badge admin-badge-active">Доставлено</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- SECTION 2: B2B REQUESTS TO EMAIL -->
+        <div class="admin-section-card">
+          <div class="admin-card-header">
+            <h3>Лог надісланих заявок від роботодавців (B2B)</h3>
+            <span style="font-size: 0.8rem; color: var(--color-text-muted);">Заявки перенаправлені у комерційний відділ</span>
+          </div>
+          
+          <div class="admin-table-wrapper">
+            <table class="admin-table">
+              <thead>
+                <tr>
+                  <th>Компанія / Контакт</th>
+                  <th>Отримувач (Email)</th>
+                  <th>Тема листа (Сповіщення)</th>
+                  <th>Час відправки</th>
+                  <th>Статус доставки</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>ТОВ «Дніпро Логістик»</strong> (Коваленко Ігор)</td>
+                  <td>b2b@kariera.dp.ua</td>
+                  <td>[Заявка B2B] Підбір: Керівник відділу продажів</td>
+                  <td>14.06.2026 15:20</td>
+                  <td><span class="admin-badge admin-badge-active">Доставлено</span></td>
+                </tr>
+                <tr>
+                  <td><strong>LogicFlow Solutions</strong> (Коваленко Ганна)</td>
+                  <td>b2b-it@kariera.dp.ua</td>
+                  <td>[Заявка B2B] Підбір: Senior DevOps Engineer</td>
+                  <td>12.06.2026 11:05</td>
+                  <td><span class="admin-badge admin-badge-active">Доставлено</span></td>
+                </tr>
+                <tr>
+                  <td><strong>АТ «УкрПромТех»</strong> (Шевченко Віталій)</td>
+                  <td>b2b@kariera.dp.ua</td>
+                  <td>[Заявка B2B] Підбір: Головний інженер виробництва</td>
+                  <td>10.06.2026 18:40</td>
+                  <td><span class="admin-badge admin-badge-active">Доставлено</span></td>
+                </tr>
+                <tr>
+                  <td><strong>ТОВ «ПромПостач»</strong> (Петренко Ольга)</td>
+                  <td>b2b@kariera.dp.ua</td>
+                  <td>[Заявка B2B] Підбір: Фінансовий аналітик</td>
+                  <td>08.06.2026 10:15</td>
+                  <td><span class="admin-badge admin-badge-active">Доставлено</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- TAB Content: Vacancies Builder -->
+      <div id="tab-vacancies" class="admin-tab-content">
+        <div class="admin-section-card">
+          <div class="admin-card-header">
+            <h3>Додати нову вакансію на сайт</h3>
+            <span style="font-size: 0.8rem; color: var(--color-text-muted);">Вакансія збережеться у localStorage та з'явиться у каталозі</span>
+          </div>
+
+          <form id="admin-vacancy-form" style="margin-top: 1.5rem;">
+            <input type="hidden" id="vac-index" value="">
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="vac-title">Назва вакансії</label>
+                <input type="text" id="vac-title" class="form-control" placeholder="Наприклад: Senior Front-End Developer" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="vac-category">Категорія (Напрямок)</label>
+                <select id="vac-category" class="form-control" required style="height: 52px;">
+                  <option value="it">IT & Технології</option>
+                  <option value="sales">Продажі & Маркетинг</option>
+                  <option value="production">Виробництво & Інженерія</option>
+                  <option value="finance">Фінанси & Аналітика</option>
+                  <option value="management">Керівництво & Топ-менеджмент</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="vac-salary">Заробітна плата</label>
+                <input type="text" id="vac-salary" class="form-control" placeholder="Наприклад: 45 000 — 60 000 грн або за домовленістю" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="vac-city">Місто / Формат роботи</label>
+                <input type="text" id="vac-city" class="form-control" placeholder="Наприклад: Дніпро (Офіс) або Віддалено" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="vac-experience">Досвід роботи</label>
+                <input type="text" id="vac-experience" class="form-control" placeholder="Наприклад: 3+ роки" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="vac-type">Тип зайнятості</label>
+                <input type="text" id="vac-type" class="form-control" placeholder="Наприклад: Повна зайнятість" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="vac-description">Опис вакансії та ключові завдання</label>
+              <textarea id="vac-description" class="form-control" placeholder="Опишіть завдання та основні обов'язки..." required style="min-height: 100px;"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" id="vac-submit-btn" style="margin-top: 1rem;">Опублікувати вакансію</button>
+            <button type="button" class="btn btn-secondary" id="vac-cancel-btn" style="margin-top: 1rem; margin-left: 1rem; display: none;">Скасувати</button>
+          </form>
+        </div>
+
+        <div class="admin-section-card">
+          <div class="admin-card-header">
+            <h3>Активні вакансії в системі</h3>
+            <span style="font-size: 0.8rem; color: var(--color-text-muted);" id="vacancies-list-counter">Усього вакансій: 5</span>
+          </div>
+
+          <div class="admin-table-wrapper">
+            <table class="admin-table">
+              <thead>
+                <tr>
+                  <th>Назва вакансії</th>
+                  <th>Категорія</th>
+                  <th>Зарплата</th>
+                  <th>Формат / Досвід</th>
+                  <th>Дії</th>
+                </tr>
+              </thead>
+              <tbody id="admin-vacancies-list">
+                <!-- Dynamically populated -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- TAB Content: Contacts Builder -->
+      <div id="tab-contacts" class="admin-tab-content">
+        <div class="admin-section-card">
+          <div class="admin-card-header">
+            <h3>Редагування контактної інформації агентства</h3>
+            <span style="font-size: 0.8rem; color: var(--color-text-muted);">Зміни автоматично відобразяться у шапці, підвалі та на сторінці контактів</span>
+          </div>
+
+          <form id="admin-contacts-form" style="margin-top: 1.5rem;">
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="contact-phone-1">Основний міський телефон</label>
+                <input type="text" id="contact-phone-1" class="form-control" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="contact-phone-2">Мобільний телефон</label>
+                <input type="text" id="contact-phone-2" class="form-control" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="contact-email">Контактна електронна пошта</label>
+                <input type="email" id="contact-email" class="form-control" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="contact-address">Фізична адреса офісу</label>
+                <input type="text" id="contact-address" class="form-control" required>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="margin-top: 1rem;">Зберегти та оновити контакти</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- TAB Content: Pages Text Constructor -->
+      <div id="tab-pages" class="admin-tab-content">
+        <div class="admin-section-card">
+          <div class="admin-card-header">
+            <h3>Візуальний редактор текстового контенту (Конструктор)</h3>
+            <span style="font-size: 0.8rem; color: var(--color-text-muted);">Змінюйте тексти на головній сторінці та про компанію</span>
+          </div>
+
+          <form id="admin-pages-form" style="margin-top: 1.5rem;">
+            <h4 style="color: var(--color-primary); margin-bottom: 1rem; border-bottom: 1px solid var(--color-border); padding-bottom: 0.5rem; font-family: var(--font-sans);">Головна сторінка (index.html)</h4>
+            
+            <div class="form-group">
+              <label class="form-label" for="page-home-hero-title">Головний заголовок Hero</label>
+              <input type="text" id="page-home-hero-title" class="form-control" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="page-home-hero-desc">Підзаголовок / Опис Hero</label>
+              <textarea id="page-home-hero-desc" class="form-control" required style="min-height: 80px;"></textarea>
+            </div>
+
+            <h4 style="color: var(--color-primary); margin-top: 2rem; margin-bottom: 1rem; border-bottom: 1px solid var(--color-border); padding-bottom: 0.5rem; font-family: var(--font-sans);">Про нас (about.html)</h4>
+
+            <div class="form-group">
+              <label class="form-label" for="page-about-title">Головний заголовок сторінки</label>
+              <input type="text" id="page-about-title" class="form-control" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="page-about-mission">Текст місії компанії</label>
+              <textarea id="page-about-mission" class="form-control" required style="min-height: 80px;"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="margin-top: 1rem;">Оновити тексти сторінок</button>
+          </form>
+        </div>
+      </div>
+
+    </main>
+
+  </div>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>
+

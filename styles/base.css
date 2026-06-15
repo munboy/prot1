@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,400&display=swap');
+
+/* --- DESIGN TOKENS & VARIABLES --- */
+:root {
+  /* Colors */
+  --color-primary: #1A2A44;       /* Deep Navy */
+  --color-primary-light: #2A3D5C; /* Medium Navy */
+  --color-primary-dark: #0D1726;  /* Darker Navy */
+  --color-accent: #E87C3F;        /* Muted Terracotta Orange */
+  --color-accent-hover: #D06B33;  /* Hover Orange */
+  --color-bg: #FFFFFF;            /* Pure White */
+  --color-bg-alt: #F5F7FA;        /* Cold White / Light Grey */
+  --color-text: #2B303A;          /* Charcoal */
+  --color-text-muted: #677180;    /* Muted Slate Grey */
+  --color-text-light: #FFFFFF;    /* White text */
+  --color-border: #E2E8F0;        /* Light Grey Border */
+  --color-border-hover: #CBD5E1;  /* Medium Border */
+  
+  /* Fonts */
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-serif: 'Source Serif 4', Georgia, serif;
+  
+  /* Layout */
+  --container-width: 1200px;
+  --header-height: 80px;
+  --header-height-mobile: 70px;
+  
+  /* Typography scale */
+  --fs-h1: clamp(2.5rem, 5vw, 3.75rem);
+  --fs-h2: clamp(1.8rem, 4vw, 2.5rem);
+  --fs-h3: clamp(1.4rem, 3vw, 1.8rem);
+  --fs-body: 1rem;
+  --fs-small: 0.875rem;
+  
+  /* Borders */
+  --radius: 4px;                  /* Restrained border radius */
+  
+  /* Transitions */
+  --transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* --- RESET --- */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-sans);
+  font-size: var(--fs-body);
+  line-height: 1.6;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  overflow-x: hidden;
+}
+
+/* --- TYPOGRAPHY --- */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+  color: var(--color-primary);
+  line-height: 1.25;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: var(--fs-h1);
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  font-size: var(--fs-h2);
+  letter-spacing: -0.01em;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: var(--fs-h3);
+}
+
+p {
+  margin-bottom: 1.25rem;
+}
+
+p.lead {
+  font-size: 1.15rem;
+  color: var(--color-text-muted);
+  line-height: 1.7;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+/* Alignment utilities */
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+.text-muted { color: var(--color-text-muted); }
+
+/* Spacing utilities */
+.mb-1 { margin-bottom: 0.5rem; }
+.mb-2 { margin-bottom: 1rem; }
+.mb-3 { margin-bottom: 1.5rem; }
+.mb-4 { margin-bottom: 2rem; }
+.mb-6 { margin-bottom: 3.5rem; }
+
+/* Scroll reveal initial states */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}

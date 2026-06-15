@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Роботодавцям | Кадрове агентство «Кар'єра»</title>
+  <meta name="description" content="Услуги підбору персоналу для бізнесу. Рекрутинг, Executive Search, масовий підбір та HR-консалтинг у Дніпрі та по всій Україні від агентства Кар'єра.">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/layout.css">
+  <link rel="stylesheet" href="styles/components.css">
+  <link rel="stylesheet" href="styles/pages.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">К</div>
+        <span>КАР'ЄРА</span>
+      </a>
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link">Головна</a>
+        <a href="employers.html" class="nav-link active">Роботодавцям</a>
+        <a href="candidates.html" class="nav-link">Кандидатам</a>
+        <a href="vacancies.html" class="nav-link">Вакансії</a>
+        <a href="about.html" class="nav-link">Про нас</a>
+        <a href="contacts.html" class="nav-link">Контакти</a>
+        <a href="admin.html" class="nav-link">Адмін-панель</a>
+      </nav>
+      <div class="header-cta">
+        <a href="employers.html#order-form" class="btn btn-secondary">Замовити персонал</a>
+      </div>
+      <button class="hamburger" aria-label="Відкрити меню">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+    </div>
+  </header>
+
+  <!-- MOBILE NAVIGATION OVERLAY -->
+  <div class="mobile-nav">
+    <ul class="mobile-menu">
+      <li><a href="index.html" class="nav-link">Головна</a></li>
+      <li><a href="employers.html" class="nav-link active">Роботодавцям</a></li>
+      <li><a href="candidates.html" class="nav-link">Кандидатам</a></li>
+      <li><a href="vacancies.html" class="nav-link">Вакансії</a></li>
+      <li><a href="about.html" class="nav-link">Про нас</a></li>
+      <li><a href="contacts.html" class="nav-link">Контакти</a></li>
+      <li><a href="admin.html" class="nav-link">Адмін-панель</a></li>
+    </ul>
+    <a href="employers.html#order-form" class="btn btn-primary">Замовити персонал</a>
+  </div>
+
+  <!-- HERO SECTION -->
+  <section class="hero hero-alt">
+    <div class="container grid-2">
+      <div class="hero-content reveal">
+        <span class="hero-tagline">B2B Рішення</span>
+        <h1 class="hero-title">Формуємо команди, які забезпечують розвиток бізнесу</h1>
+        <p class="hero-desc lead">Професійний підбір фахівців та топ-менеджерів для компаній будь-якого масштабу. Наша експертиза допомагає мінімізувати ризики найму та економити час керівників.</p>
+        <div class="hero-actions">
+          <a href="#order-form" class="btn btn-primary">Замовити підбір</a>
+          <a href="#services" class="btn btn-secondary">Наші послуги</a>
+        </div>
+      </div>
+      <div class="hero-graphic reveal" style="transition-delay: 0.2s;">
+        <svg viewBox="0 0 500 500" class="hero-pattern" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="50" y="50" width="400" height="400" rx="4" stroke="var(--color-border)" stroke-width="1.5" stroke-dasharray="10 10"/>
+          <path d="M100 380 L200 280 L300 320 L400 180" stroke="var(--color-accent)" stroke-width="3" stroke-linecap="round"/>
+          <circle cx="100" cy="380" r="6" fill="var(--color-primary)"/>
+          <circle cx="200" cy="280" r="6" fill="var(--color-primary)"/>
+          <circle cx="300" cy="320" r="6" fill="var(--color-primary)"/>
+          <circle cx="400" cy="180" r="8" fill="var(--color-accent)"/>
+          <line x1="100" y1="380" x2="100" y2="420" stroke="var(--color-border)" stroke-width="1"/>
+          <line x1="200" y1="280" x2="200" y2="420" stroke="var(--color-border)" stroke-width="1"/>
+          <line x1="300" y1="320" x2="300" y2="420" stroke="var(--color-border)" stroke-width="1"/>
+          <line x1="400" y1="180" x2="400" y2="420" stroke="var(--color-border)" stroke-width="1"/>
+        </svg>
+        <div class="hero-card-badge hero-card-badge-1" style="top: 20%; left: -5%;">
+          <div class="badge-number">90 днів</div>
+          <div class="badge-text">гарантійної<br>заміни</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES LIST -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="decor-line decor-line-center"></div>
+      <h2 class="text-center mb-2">Наші послуги для роботодавців</h2>
+      <p class="lead text-center mb-6">Пропонуємо гнучкі формати співпраці відповідно до завдань вашого бізнесу</p>
+      
+      <div class="grid-3">
+        <div class="card reveal">
+          <h3 class="card-title">Класичний рекрутинг</h3>
+          <p class="card-text">Пошук та відбір фахівців середньої ланки, профільних технічних спеціалістів. Оптимальний баланс швидкості та глибини оцінки.</p>
+          <ul style="list-style: none; margin-bottom: 1.5rem; font-size: 0.9rem; color: var(--color-text-muted);">
+            <li style="margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2.5"><path d="M20 6L9 17L4 12"/></svg> Термін закриття: 10-18 днів
+            </li>
+            <li style="margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2.5"><path d="M20 6L9 17L4 12"/></svg> Оплата за фактом виходу кандидата
+            </li>
+          </ul>
+        </div>
+        
+        <div class="card reveal" style="transition-delay: 0.1s;">
+          <h3 class="card-title">Executive Search</h3>
+          <p class="card-text">Прямий цілеспрямований пошук топ-менеджерів, директорів та унікальних фахівців на ринку. Повна конфіденційність.</p>
+          <ul style="list-style: none; margin-bottom: 1.5rem; font-size: 0.9rem; color: var(--color-text-muted);">
+            <li style="margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2.5"><path d="M20 6L9 17L4 12"/></svg> Повний аналіз мапи ринку
+            </li>
+            <li style="margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2.5"><path d="M20 6L9 17L4 12"/></svg> Індивідуальний супровід переговорів
+            </li>
+          </ul>
+        </div>
+        
+        <div class="card reveal" style="transition-delay: 0.2s;">
+          <h3 class="card-title">Масовий підбір</h3>
+          <p class="card-text">Швидке залучення великої кількості лінійного персоналу для складської логістики, виробництв, контакт-центрів або ритейлу.</p>
+          <ul style="list-style: none; margin-bottom: 1.5rem; font-size: 0.9rem; color: var(--color-text-muted);">
+            <li style="margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2.5"><path d="M20 6L9 17L4 12"/></svg> Власні технології групового оцінювання
+            </li>
+            <li style="margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2.5"><path d="M20 6L9 17L4 12"/></svg> Оперативний запуск великих команд
+            </li>
+          </ul>
+        </div>
+
+        <div class="card reveal">
+          <h3 class="card-title">Аутстафінг персоналу</h3>
+          <p class="card-text">Оформлення частини ваших співробітників у штат агентства. Зниження навантаження на вашу бухгалтерію та кадрову службу.</p>
+          <ul style="list-style: none; margin-bottom: 1.5rem; font-size: 0.9rem; color: var(--color-text-muted);">
+            <li style="margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2.5"><path d="M20 6L9 17L4 12"/></svg> Адміністрування виплат та податків
+            </li>
+            <li style="margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2.5"><path d="M20 6L9 17L4 12"/></svg> Зниження юридичних ризиків найму
+            </li>
+          </ul>
+        </div>
+
+        <div class="card reveal" style="transition-delay: 0.1s;">
+          <h3 class="card-title">HR-консалтинг</h3>
+          <p class="card-text">Аудит чинної системи управління персоналом, розробка KPI, аудит посадових інструкцій, побудова системи мотивації.</p>
+          <ul style="list-style: none; margin-bottom: 1.5rem; font-size: 0.9rem; color: var(--color-text-muted);">
+            <li style="margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2.5"><path d="M20 6L9 17L4 12"/></svg> Оптимізація внутрішніх HR-процесів
+            </li>
+            <li style="margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2.5"><path d="M20 6L9 17L4 12"/></svg> Підвищення утримання кадрів
+            </li>
+          </ul>
+        </div>
+
+        <div class="card reveal" style="transition-delay: 0.2s;">
+          <h3 class="card-title">Аналіз ринку праці</h3>
+          <p class="card-text">Дослідження рівня заробітних плат за цільовими професіями, оцінка дефіциту кадрів та аналіз активності конкурентів.</p>
+          <ul style="list-style: none; margin-bottom: 1.5rem; font-size: 0.9rem; color: var(--color-text-muted);">
+            <li style="margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2.5"><path d="M20 6L9 17L4 12"/></svg> Об'єктивні дані для перегляду окладів
+            </li>
+            <li style="margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2.5"><path d="M20 6L9 17L4 12"/></svg> Мінімізація плинності через зарплати
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COOPERATION STEPS -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="decor-line decor-line-center"></div>
+      <h2 class="text-center mb-6">Схема взаємодії</h2>
+      <div class="grid-4">
+        <div class="reveal">
+          <div style="font-family: var(--font-serif); font-size: 2rem; color: var(--color-accent); font-weight: 700; margin-bottom: 1rem;">1. Заявка</div>
+          <p style="font-size: 0.95rem; color: var(--color-text-muted);">Узгодження вимог до кандидата, умов праці та специфіки посади під час заповнення брифу.</p>
+        </div>
+        <div class="reveal" style="transition-delay: 0.1s;">
+          <div style="font-family: var(--font-serif); font-size: 2rem; color: var(--color-accent); font-weight: 700; margin-bottom: 1rem;">2. Контракт</div>
+          <p style="font-size: 0.95rem; color: var(--color-text-muted);">Підписання договору про співпрацю із зафіксованими термінами та гарантією заміни.</p>
+        </div>
+        <div class="reveal" style="transition-delay: 0.2s;">
+          <div style="font-family: var(--font-serif); font-size: 2rem; color: var(--color-accent); font-weight: 700; margin-bottom: 1rem;">3. Підбір</div>
+          <p style="font-size: 0.95rem; color: var(--color-text-muted);">Проведення інтерв'ю та презентація фінального пулу кращих перевірених фахівців.</p>
+        </div>
+        <div class="reveal" style="transition-delay: 0.3s;">
+          <div style="font-family: var(--font-serif); font-size: 2rem; color: var(--color-accent); font-weight: 700; margin-bottom: 1rem;">4. Результат</div>
+          <p style="font-size: 0.95rem; color: var(--color-text-muted);">Вихід успішного кандидата на роботу, підписання актів та старт гарантійного супроводу.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6 BENEFITS GRID -->
+  <section class="section">
+    <div class="container">
+      <div class="decor-line decor-line-center"></div>
+      <h2 class="text-center mb-2">6 приводів залишити заявку на підбір персоналу прямо зараз</h2>
+      <p class="lead text-center mb-6">Кадрове агентство «Кар'єра-Дніпро» — ваш надійний провідник у світі професійного рекрутингу</p>
+      
+      <div class="grid-3">
+        <div class="card reveal">
+          <div class="card-icon">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+          </div>
+          <h3 class="card-title" style="font-size: 1.25rem;">Розуміння вашого бізнесу</h3>
+          <p class="card-text">Завжди розуміємо і знаємо специфіку бізнесу нашого замовника, беремо до уваги корпоративну культуру та інші особливості компанії, що дозволяє максимально точно і ефективно підібрати необхідний персонал.</p>
+        </div>
+        
+        <div class="card reveal" style="transition-delay: 0.1s;">
+          <div class="card-icon">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+          </div>
+          <h3 class="card-title" style="font-size: 1.25rem;">Клієнтоорієнтованість & Конфіденційність</h3>
+          <p class="card-text">Пропагуємо клієнтоорієнтованість, враховуємо абсолютно всі побажання замовника. Дотримуємося повної конфіденційності, надаємо можливість закритого (конфіденційного) пошуку на ринку.</p>
+        </div>
+        
+        <div class="card reveal" style="transition-delay: 0.2s;">
+          <div class="card-icon">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/></svg>
+          </div>
+          <h3 class="card-title" style="font-size: 1.25rem;">Багатоетапний відбір</h3>
+          <p class="card-text">Завдяки унікальній багатоетапній системі відбору найкращих кандидатів, ми гарантуємо повну відповідність професійних навичок, досвіду та особистих якостей претендента вимогам клієнта.</p>
+        </div>
+        
+        <div class="card reveal">
+          <div class="card-icon">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+          </div>
+          <h3 class="card-title" style="font-size: 1.25rem;">Гарантійний супровід</h3>
+          <p class="card-text">Передбачено повний гарантійний супровід у період випробувального терміну найнятого спеціаліста, а також безкоштовну оперативну заміну у разі не проходження кандидатом випробувального терміну.</p>
+        </div>
+        
+        <div class="card reveal" style="transition-delay: 0.1s;">
+          <div class="card-icon">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+          </div>
+          <h3 class="card-title" style="font-size: 1.25rem;">Строге дотримання зобов'язань</h3>
+          <p class="card-text">Строго дотримуємось усіх договірних зобов'язань. Зручну для себе форму оплати послуг замовник визначає самостійно. Для постійних та корпоративних клієнтів надаємо систему гнучких знижок.</p>
+        </div>
+        
+        <div class="card reveal" style="transition-delay: 0.2s;">
+          <div class="card-icon">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <h3 class="card-title" style="font-size: 1.25rem;">Економія ваших ресурсів</h3>
+          <p class="card-text">Співпраця з нами — це чудова можливість заощадити ваш час, гроші та сили. Ми беремо на себе всі рутинні турботи та своєчасно підберемо найкращих кандидатів для успішного розвитку вашого бізнесу.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SMART SEARCH METHODOLOGY (РОЗУМНИЙ ПОШУК) -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="decor-line decor-line-center"></div>
+      <h2 class="text-center mb-2">Технологія «Розумного пошуку» (Executive Search / Head Hunting)</h2>
+      <p class="lead text-center mb-6">Методологія ретельного дослідження ринку для швидкого збільшення прибутку клієнтів</p>
+      
+      <div class="grid-4" style="gap: 1.5rem;">
+        <div class="card reveal" style="background-color: var(--color-bg); padding: 2rem;">
+          <div style="font-family: var(--font-serif); font-size: 2.25rem; color: var(--color-accent); font-weight: 700; margin-bottom: 1rem; line-height: 1;">01</div>
+          <h3 style="font-family: var(--font-sans); font-size: 1.1rem; color: var(--color-primary); font-weight: 700; margin-bottom: 0.75rem; text-transform: uppercase;">Стратегія</h3>
+          <p style="font-size: 0.85rem; color: var(--color-text-muted); line-height: 1.6; margin-bottom: 0;">
+            • Вивчення профілю компанії-замовника.<br>
+            • Аналіз специфіки та вимог вакансії.<br>
+            • Дослідження цільового сегменту ринку.<br>
+            • Формування пакету документів.
+          </p>
+        </div>
+        
+        <div class="card reveal" style="background-color: var(--color-bg); padding: 2rem; transition-delay: 0.1s;">
+          <div style="font-family: var(--font-serif); font-size: 2.25rem; color: var(--color-accent); font-weight: 700; margin-bottom: 1rem; line-height: 1;">02</div>
+          <h3 style="font-family: var(--font-sans); font-size: 1.1rem; color: var(--color-primary); font-weight: 700; margin-bottom: 0.75rem; text-transform: uppercase;">Реалізація</h3>
+          <p style="font-size: 0.85rem; color: var(--color-text-muted); line-height: 1.6; margin-bottom: 0;">
+            • Прямий пошук серед успішно працюючих фахівців.<br>
+            • Хедхантинг та бізнес-нетворкінг.<br>
+            • Пошук по напрацьованій базі агентства.<br>
+            • Реклама у ЗМІ та мережі Інтернет.
+          </p>
+        </div>
+        
+        <div class="card reveal" style="background-color: var(--color-bg); padding: 2rem; transition-delay: 0.2s;">
+          <div style="font-family: var(--font-serif); font-size: 2.25rem; color: var(--color-accent); font-weight: 700; margin-bottom: 1rem; line-height: 1;">03</div>
+          <h3 style="font-family: var(--font-sans); font-size: 1.1rem; color: var(--color-primary); font-weight: 700; margin-bottom: 0.75rem; text-transform: uppercase;">Оцінка</h3>
+          <p style="font-size: 0.85rem; color: var(--color-text-muted); line-height: 1.6; margin-bottom: 0;">
+            • Організація інтерв'ю та порівняльний аналіз.<br>
+            • Професійне тестування під завдання компанії.<br>
+            • Перевірка рекомендацій з минулих місць.<br>
+            • Аналіз мотивації та цінностей.
+          </p>
+        </div>
+        
+        <div class="card reveal" style="background-color: var(--color-bg); padding: 2rem; transition-delay: 0.3s;">
+          <div style="font-family: var(--font-serif); font-size: 2.25rem; color: var(--color-accent); font-weight: 700; margin-bottom: 1rem; line-height: 1;">04</div>
+          <h3 style="font-family: var(--font-sans); font-size: 1.1rem; color: var(--color-primary); font-weight: 700; margin-bottom: 0.75rem; text-transform: uppercase;">Інтеграція</h3>
+          <p style="font-size: 0.85rem; color: var(--color-text-muted); line-height: 1.6; margin-bottom: 0;">
+            • Адаптація та супровід кандидата в команді.<br>
+            • Моніторинг ринку та аналітика зарплат.<br>
+            • Розробка KPI та посадових інструкцій.<br>
+            • Гарантія заміни та підбір тимчасових кадрів.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COOPERATION TERMS & COST -->
+  <section class="section">
+    <div class="container">
+      <div class="decor-line decor-line-center"></div>
+      <h2 class="text-center mb-2">Умови співпраці та фінансові гарантії</h2>
+      <p class="lead text-center mb-6">Прозорі та чесні взаєморозрахунки з гарантією надійності</p>
+      
+      <div class="grid-2">
+        <div class="card reveal" style="border-left: 4px solid var(--color-accent); padding: 3rem;">
+          <h3 class="card-title" style="font-size: 1.5rem; color: var(--color-primary); margin-bottom: 1.5rem;">Вартість послуг та етапи оплати</h3>
+          <ul style="list-style: none; padding-left: 0; font-size: 1rem; color: var(--color-text); line-height: 1.8;">
+            <li style="margin-bottom: 1rem; display: flex; align-items: flex-start; gap: 0.75rem;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2.5" style="flex-shrink: 0; margin-top: 5px;"><path d="M20 6L9 17L4 12"/></svg>
+              <span><strong>Загальна вартість</strong>: Становить одну місячну заробітну плату (оклад) підібраного фахівця.</span>
+            </li>
+            <li style="margin-bottom: 1rem; display: flex; align-items: flex-start; gap: 0.75rem;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2.5" style="flex-shrink: 0; margin-top: 5px;"><path d="M20 6L9 17L4 12"/></svg>
+              <span><strong>Початок роботи (Аванс)</strong>: 50% від вартості замовлення сплачується після підписання договору.</span>
+            </li>
+            <li style="margin-bottom: 1rem; display: flex; align-items: flex-start; gap: 0.75rem;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2.5" style="flex-shrink: 0; margin-top: 5px;"><path d="M20 6L9 17L4 12"/></svg>
+              <span><strong>Вихід фахівця (Фінал)</strong>: Решта 50% оплачується безпосередньо у день виходу спеціаліста на роботу.</span>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="card reveal" style="border-left: 4px solid var(--color-primary); padding: 3rem; transition-delay: 0.1s;">
+          <h3 class="card-title" style="font-size: 1.5rem; color: var(--color-primary); margin-bottom: 1.5rem;">Наші професійні стандарти</h3>
+          <ul style="list-style: none; padding-left: 0; font-size: 1rem; color: var(--color-text); line-height: 1.8;">
+            <li style="margin-bottom: 1rem; display: flex; align-items: flex-start; gap: 0.75rem;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2.5" style="flex-shrink: 0; margin-top: 5px;"><path d="M20 6L9 17L4 12"/></svg>
+              <span><strong>Орієнтація на результат</strong>: Ми не обмежуємо кількість співбесід — підбір триває до моменту затвердження фінального кандидата.</span>
+            </li>
+            <li style="margin-bottom: 1rem; display: flex; align-items: flex-start; gap: 0.75rem;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2.5" style="flex-shrink: 0; margin-top: 5px;"><path d="M20 6L9 17L4 12"/></svg>
+              <span><strong>Повний запуск гарантії</strong>: Статус замовлення стає «Виконано» лише після проходження кандидатом випробувального терміну.</span>
+            </li>
+            <li style="margin-bottom: 1rem; display: flex; align-items: flex-start; gap: 0.75rem;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2.5" style="flex-shrink: 0; margin-top: 5px;"><path d="M20 6L9 17L4 12"/></svg>
+              <span><strong>Безкоштовна заміна</strong>: Якщо спеціаліст не пройшов випробувальний термін (з об'єктивних причин), ми проведемо його безкоштовну заміну.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIST OF COOPERATING COMPANIES (PARTNERS) -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="decor-line decor-line-center"></div>
+      <h2 class="text-center mb-2">Нам довіряють лідери ринку</h2>
+      <p class="lead text-center mb-6">Кадрове агентство «Кар'єра-Дніпро» успішно співпрацює з провідними українськими та міжнародними компаніями</p>
+      
+      <div class="grid-3" style="gap: 1.5rem;">
+        <div class="card reveal" style="padding: 2rem; background-color: var(--color-bg); justify-content: center; min-height: 130px; text-align: center;">
+          <strong style="font-size: 1.15rem; color: var(--color-primary); display: block; margin-bottom: 0.4rem;">Корпорація «GIR» (Дніпро)</strong>
+          <span style="font-size: 0.85rem; color: var(--color-text-muted);">Виробництво вогнетривкої продукції, торгівля та інженерний супровід.</span>
+        </div>
+        
+        <div class="card reveal" style="padding: 2rem; background-color: var(--color-bg); justify-content: center; min-height: 130px; text-align: center; transition-delay: 0.1s;">
+          <strong style="font-size: 1.15rem; color: var(--color-primary); display: block; margin-bottom: 0.4rem;">ТОВ «Даніелі Хеві Машинери»</strong>
+          <span style="font-size: 0.85rem; color: var(--color-text-muted);">Проектування та випуск металургійного обладнання Danieli (Італія) по всьому світу.</span>
+        </div>
+        
+        <div class="card reveal" style="padding: 2rem; background-color: var(--color-bg); justify-content: center; min-height: 130px; text-align: center; transition-delay: 0.2s;">
+          <strong style="font-size: 1.15rem; color: var(--color-primary); display: block; margin-bottom: 0.4rem;">Company «MARUBENI CORPORATION»</strong>
+          <span style="font-size: 0.85rem; color: var(--color-text-muted);">Японська корпорація: ТНП, продукти харчування, агросегмент, гірничодобувна техніка.</span>
+        </div>
+        
+        <div class="card reveal" style="padding: 2rem; background-color: var(--color-bg); justify-content: center; min-height: 130px; text-align: center;">
+          <strong style="font-size: 1.15rem; color: var(--color-primary); display: block; margin-bottom: 0.4rem;">Представництво «ZAMine services»</strong>
+          <span style="font-size: 0.85rem; color: var(--color-text-muted);">Підрозділ Marubeni з обслуговування та сервісу гірничодобувного бізнесу.</span>
+        </div>
+        
+        <div class="card reveal" style="padding: 2rem; background-color: var(--color-bg); justify-content: center; min-height: 130px; text-align: center; transition-delay: 0.1s;">
+          <strong style="font-size: 1.15rem; color: var(--color-primary); display: block; margin-bottom: 0.4rem;">ТОВ «Олія Трейд» (Дніпро)</strong>
+          <span style="font-size: 0.85rem; color: var(--color-text-muted);">Найбільший дистриб'ютор на ринку промислових мастил ТМ «Exxonmobil».</span>
+        </div>
+        
+        <div class="card reveal" style="padding: 2rem; background-color: var(--color-bg); justify-content: center; min-height: 130px; text-align: center; transition-delay: 0.2s;">
+          <strong style="font-size: 1.15rem; color: var(--color-primary); display: block; margin-bottom: 0.4rem;">Компанія «МІМ»</strong>
+          <span style="font-size: 0.85rem; color: var(--color-text-muted);">Лідер обробки металу, офіційний представник корпорації "Basf-Chemetall".</span>
+        </div>
+        
+        <div class="card reveal" style="padding: 2rem; background-color: var(--color-bg); justify-content: center; min-height: 130px; text-align: center;">
+          <strong style="font-size: 1.15rem; color: var(--color-primary); display: block; margin-bottom: 0.4rem;">ВАТ «Лінде Газ Україна»</strong>
+          <span style="font-size: 0.85rem; color: var(--color-text-muted);">Найбільший виробник та постачальник технічних газів у складі німецької Linde Group.</span>
+        </div>
+        
+        <div class="card reveal" style="padding: 2rem; background-color: var(--color-bg); justify-content: center; min-height: 130px; text-align: center; transition-delay: 0.1s;">
+          <strong style="font-size: 1.15rem; color: var(--color-primary); display: block; margin-bottom: 0.4rem;">ТОВ «Атраком» (Київ)</strong>
+          <span style="font-size: 0.85rem; color: var(--color-text-muted);">Загальнонаціональний лідер будівництва волоконно-оптичних ліній зв'язку.</span>
+        </div>
+        
+        <div class="card reveal" style="padding: 2rem; background-color: var(--color-bg); justify-content: center; min-height: 130px; text-align: center; transition-delay: 0.2s;">
+          <strong style="font-size: 1.15rem; color: var(--color-primary); display: block; margin-bottom: 0.4rem;">«HILTI - Україна» (Київ)</strong>
+          <span style="font-size: 0.85rem; color: var(--color-text-muted);">Постачальник професійного будівельного інструменту та кріпильних систем Hilti.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTERACTIVE FAQ (ACCORDION) -->
+  <section class="section section-alt">
+    <div class="container" style="max-width: 800px;">
+      <div class="decor-line decor-line-center"></div>
+      <h2 class="text-center mb-6">Часті запитання від бізнесу</h2>
+      
+      <div class="accordion reveal">
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <span class="accordion-title">Як визначається вартість послуг рекрутингу?</span>
+            <span class="accordion-arrow">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+          </div>
+          <div class="accordion-content">
+            <div class="accordion-content-inner">
+              Вартість послуг нашого кадрового агентства з підбору персоналу становить одну місячну заробітну плату шуканого фахівця. Оплата здійснюється у два етапи: авансування у розмірі 50% після підписання договору та сплату решти 50% після фактичного виходу кандидата на роботу. Заміна фахівця під час випробувального терміну здійснюється без додаткових витрат.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <span class="accordion-title">Скільки часу триває пошук фахівця?</span>
+            <span class="accordion-arrow">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+          </div>
+          <div class="accordion-content">
+            <div class="accordion-content-inner">
+              Зазвичай перших релевантних кандидатів, які пройшли первинний відбір у нашому агентстві, ми надаємо вже через 3-5 робочих днів після підписання договору та брифування. Повний цикл закриття позиції (включаючи співбесіди на боці клієнта та вихід фахівця на роботу) зазвичай займає від 2 до 3 тижнів.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <span class="accordion-title">Що таке гарантійний період та як він працює?</span>
+            <span class="accordion-arrow">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+          </div>
+          <div class="accordion-content">
+            <div class="accordion-content-inner">
+              Для кожної закрити вакансії ми надаємо гарантійний супровід терміном від 90 днів (до 180 днів для ТОП-позицій). Якщо протягом цього часу трудові відносини з кандидатом буде припинено (з нашої або вашої ініціативи, за винятком скорочення штату), ми здійснюємо один повноцінний безкоштовний пошук нового спеціаліста на аналогічних умовах.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <span class="accordion-title">Чи працюєте ви на умовах ексклюзивності?</span>
+            <span class="accordion-arrow">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+          </div>
+          <div class="accordion-content">
+            <div class="accordion-content-inner">
+              Ми пропонуємо як ексклюзивні умови роботи (коли пошук здійснює лише наше агентство, що дає клієнту додаткові знижки та пріоритетний ресурс рекрутерів), так і неексклюзивні умови, які дозволяють замовнику паралельно вести самостійний пошук.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DETAIL B2B FORM -->
+  <section class="section" id="order-form">
+    <div class="container" style="max-width: 700px;">
+      <div class="text-center mb-4">
+        <h2 style="margin-bottom: 0.5rem;">Замовити підбір персоналу</h2>
+        <p class="text-muted">Заповніть заявку, і наш провідний рекрутер зв'яжеться з вами для уточнення профілю вакансії.</p>
+      </div>
+      <form class="card reveal">
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label" for="company-name">Назва компанії</label>
+            <input type="text" id="company-name" class="form-control" placeholder="ТОВ «Логістик-Груп»" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="contact-person">Контактна особа</label>
+            <input type="text" id="contact-person" class="form-control" placeholder="Олександр Коваль" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label" for="contact-phone">Телефон</label>
+            <input type="tel" id="contact-phone" class="form-control" placeholder="+380 50 123 45 67" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="contact-email">Email</label>
+            <input type="email" id="contact-email" class="form-control" placeholder="hr@company.com" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="vacancy-title">Бажана посада фахівця</label>
+          <input type="text" id="vacancy-title" class="form-control" placeholder="Керівник відділу продажів / Senior PHP розробник" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="vacancy-details">Додаткові вимоги чи коментарі</label>
+          <textarea id="vacancy-details" class="form-control" placeholder="Вкажіть бажаний рівень заробітної плати, ключові компетенції чи побажання щодо досвіду кандидатів."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width: 100%;">Надіслати заявку на пошук</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">КАР'ЄРА</div>
+          <p class="footer-desc">Кадрове рекрутингове агентство «Кар'єра» — ваш надійний партнер у сфері пошуку та підбору персоналу з 2001 року. Допомагаємо будувати успішний бізнес та успішну кар'єру.</p>
+        </div>
+        <div>
+          <h4 class="footer-heading">Послуги</h4>
+          <ul class="footer-links">
+            <li><a href="employers.html">Роботодавцям</a></li>
+            <li><a href="candidates.html">Кандидатам</a></li>
+            <li><a href="vacancies.html">Наші вакансії</a></li>
+            <li><a href="resume.html">Надіслати резюме</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">Компанія</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">Про нас</a></li>
+            <li><a href="documents.html">Офіційні документи</a></li>
+            <li><a href="contacts.html">Контакти</a></li>
+            <li><a href="admin.html">Для команди (Адмін)</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">Контакти</h4>
+          <ul class="footer-contact">
+            <li>
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+              <span>м. Дніпро,<br>вул. І. Акінфієва, 18, офіс 301</span>
+            </li>
+            <li>
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+              <a href="tel:+380990512965">+38 (099) 051-29-65</a>
+            </li>
+            <li>
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+              <a href="mailto:soldatnikova@gmail.com">soldatnikova@gmail.com</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2001-2026 Кадрове агентство «Кар'єра». Всі права захищені.</p>
+        <div class="footer-bottom-links">
+          <a href="documents.html">Політика конфіденційності</a>
+          <a href="documents.html">Договір оферты</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>
+
