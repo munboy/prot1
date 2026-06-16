@@ -651,5 +651,29 @@ document.addEventListener('DOMContentLoaded', () => {
     
     revealElements.forEach(el => revealObserver.observe(el));
   }
+
+  /* --- COLLAPSIBLE PARTNERS GRID TOGGLE --- */
+  const togglePartnersBtn = document.getElementById('toggle-partners-btn');
+  const partnersCollapse = document.getElementById('all-partners-grid');
+  if (togglePartnersBtn && partnersCollapse) {
+    togglePartnersBtn.addEventListener('click', () => {
+      const isOpen = partnersCollapse.classList.contains('is-open');
+      if (isOpen) {
+        partnersCollapse.style.maxHeight = null;
+        partnersCollapse.classList.remove('is-open');
+        togglePartnersBtn.textContent = 'Показати всіх партнерів';
+        // Scroll back up to the partners section header
+        const partnersSection = document.getElementById('partners-section');
+        if (partnersSection) {
+          partnersSection.scrollIntoView({ behavior: 'smooth' });
+        }
+      } else {
+        partnersCollapse.classList.add('is-open');
+        partnersCollapse.style.maxHeight = partnersCollapse.scrollHeight + 'px';
+        togglePartnersBtn.textContent = 'Приховати';
+      }
+    });
+  }
 });
+
 

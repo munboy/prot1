@@ -66,17 +66,80 @@
         </div>
       </div>
       <div class="hero-graphic reveal" style="transition-delay: 0.2s;">
-        <svg viewBox="0 0 500 500" class="hero-pattern" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect x="50" y="50" width="400" height="400" rx="4" stroke="var(--color-border)" stroke-width="1.5" stroke-dasharray="10 10"/>
-          <path d="M100 380 L200 280 L300 320 L400 180" stroke="var(--color-accent)" stroke-width="3" stroke-linecap="round"/>
-          <circle cx="100" cy="380" r="6" fill="var(--color-primary)"/>
-          <circle cx="200" cy="280" r="6" fill="var(--color-primary)"/>
-          <circle cx="300" cy="320" r="6" fill="var(--color-primary)"/>
-          <circle cx="400" cy="180" r="8" fill="var(--color-accent)"/>
-          <line x1="100" y1="380" x2="100" y2="420" stroke="var(--color-border)" stroke-width="1"/>
-          <line x1="200" y1="280" x2="200" y2="420" stroke="var(--color-border)" stroke-width="1"/>
-          <line x1="300" y1="320" x2="300" y2="420" stroke="var(--color-border)" stroke-width="1"/>
-          <line x1="400" y1="180" x2="400" y2="420" stroke="var(--color-border)" stroke-width="1"/>
+        <!-- Vibrant Animated B2B Performance growth curve Infographic -->
+        <svg viewBox="0 0 500 500" class="hero-pattern" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="gradient-accent" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#FF9D66"/>
+              <stop offset="100%" stop-color="#E87C3F"/>
+            </linearGradient>
+            <linearGradient id="gradient-primary" x1="0%" y1="100%" x2="0%" y2="0%">
+              <stop offset="0%" stop-color="#1A2A44"/>
+              <stop offset="100%" stop-color="#3b5887"/>
+            </linearGradient>
+            <linearGradient id="gradient-primary-glow" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#4F46E5"/>
+              <stop offset="100%" stop-color="#3B82F6"/>
+            </linearGradient>
+            <linearGradient id="gradient-area-accent" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stop-color="#E87C3F" stop-opacity="0.3"/>
+              <stop offset="100%" stop-color="#E87C3F" stop-opacity="0.0"/>
+            </linearGradient>
+            <linearGradient id="gradient-area-primary" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stop-color="#3B82F6" stop-opacity="0.2"/>
+              <stop offset="100%" stop-color="#3B82F6" stop-opacity="0.0"/>
+            </linearGradient>
+          </defs>
+
+          <!-- Outer Frame -->
+          <rect x="20" y="20" width="460" height="460" rx="12" fill="var(--color-bg)" stroke="var(--color-border)" stroke-width="1.5"/>
+          
+          <!-- Background Grid Lines -->
+          <line x1="50" y1="90" x2="450" y2="90" class="svg-grid-line"/>
+          <line x1="50" y1="170" x2="450" y2="170" class="svg-grid-line"/>
+          <line x1="50" y1="250" x2="450" y2="250" class="svg-grid-line"/>
+          <line x1="50" y1="330" x2="450" y2="330" class="svg-grid-line"/>
+          <line x1="50" y1="410" x2="450" y2="410" stroke="var(--color-border)" stroke-width="1.5"/>
+
+          <!-- Grid Vertical Scale Lines -->
+          <line x1="110" y1="90" x2="110" y2="410" class="svg-grid-line"/>
+          <line x1="190" y1="90" x2="190" y2="410" class="svg-grid-line"/>
+          <line x1="270" y1="90" x2="270" y2="410" class="svg-grid-line"/>
+          <line x1="350" y1="90" x2="350" y2="410" class="svg-grid-line"/>
+          <line x1="430" y1="90" x2="430" y2="410" stroke="var(--color-border)" stroke-width="1.5"/>
+
+          <!-- Area Fills (under the curves) -->
+          <path d="M 110 410 L 110 320 Q 190 280 270 190 T 430 130 L 430 410 Z" class="svg-area-fill-secondary"/>
+          <path d="M 110 410 L 110 240 Q 190 150 270 260 T 430 95 L 430 410 Z" class="svg-area-fill"/>
+
+          <!-- Trend Lines (Main Orange) -->
+          <path d="M 110 240 Q 190 150 270 260 T 430 95" class="svg-trend-line"/>
+          
+          <!-- Trend Lines (Secondary Blue/Navy) -->
+          <path d="M 110 320 Q 190 280 270 190 T 430 130" class="svg-trend-line-secondary"/>
+
+          <!-- Glowing Data Nodes (Intersections) -->
+          <circle cx="190" cy="180" r="7" class="svg-node-glowing"/>
+          <circle cx="270" cy="260" r="7" class="svg-node-glowing"/>
+          <circle cx="350" cy="170" r="7" class="svg-node-primary"/>
+          <circle cx="430" cy="95" r="8" class="svg-node-glowing" style="animation-duration: 1.5s;"/>
+
+          <!-- Floating Dashboard Metric Info Cards (SVG Embedded) -->
+          <g transform="translate(60, 45)" class="reveal" style="transition-delay: 0.4s;">
+            <rect x="0" y="0" width="170" height="60" rx="8" class="svg-card-bg"/>
+            <circle cx="25" cy="30" r="10" fill="#E87C3F" fill-opacity="0.15"/>
+            <circle cx="25" cy="30" r="4" fill="#E87C3F"/>
+            <text x="45" y="24" font-family="var(--font-sans)" font-size="9" font-weight="700" fill="var(--color-primary)">КУМУЛЯТИВНИЙ НАЙМ</text>
+            <text x="45" y="42" font-family="var(--font-serif)" font-size="14" font-weight="700" fill="var(--color-accent)">94% Вакансій Закрито</text>
+          </g>
+
+          <g transform="translate(260, 310)" class="reveal" style="transition-delay: 0.6s;">
+            <rect x="0" y="0" width="160" height="60" rx="8" class="svg-card-bg"/>
+            <circle cx="25" cy="30" r="10" fill="#3B82F6" fill-opacity="0.15"/>
+            <circle cx="25" cy="30" r="4" fill="#3B82F6"/>
+            <text x="45" y="24" font-family="var(--font-sans)" font-size="9" font-weight="700" fill="var(--color-text-muted)">ЕКОНОМІЯ БЮДЖЕТУ</text>
+            <text x="45" y="42" font-family="var(--font-serif)" font-size="14" font-weight="700" fill="var(--color-primary)">до 35% витрат</text>
+          </g>
         </svg>
         <div class="hero-card-badge hero-card-badge-1" style="top: 20%; left: -5%;">
           <div class="badge-number">90 днів</div>
@@ -93,7 +156,7 @@
       <h2 class="text-center mb-2">Наші послуги для роботодавців</h2>
       <p class="lead text-center mb-6">Пропонуємо гнучкі формати співпраці відповідно до завдань вашого бізнесу</p>
       
-      <div class="grid-3">
+      <div class="grid-2">
         <div class="card reveal">
           <h3 class="card-title">Класичний рекрутинг</h3>
           <p class="card-text">Пошук та відбір фахівців середньої ланки, профільних технічних спеціалістів. Оптимальний баланс швидкості та глибини оцінки.</p>
@@ -133,33 +196,7 @@
           </ul>
         </div>
 
-        <div class="card reveal">
-          <h3 class="card-title">Аутстафінг персоналу</h3>
-          <p class="card-text">Оформлення частини ваших співробітників у штат агентства. Зниження навантаження на вашу бухгалтерію та кадрову службу.</p>
-          <ul style="list-style: none; margin-bottom: 1.5rem; font-size: 0.9rem; color: var(--color-text-muted);">
-            <li style="margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2.5"><path d="M20 6L9 17L4 12"/></svg> Адміністрування виплат та податків
-            </li>
-            <li style="margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2.5"><path d="M20 6L9 17L4 12"/></svg> Зниження юридичних ризиків найму
-            </li>
-          </ul>
-        </div>
-
-        <div class="card reveal" style="transition-delay: 0.1s;">
-          <h3 class="card-title">HR-консалтинг</h3>
-          <p class="card-text">Аудит чинної системи управління персоналом, розробка KPI, аудит посадових інструкцій, побудова системи мотивації.</p>
-          <ul style="list-style: none; margin-bottom: 1.5rem; font-size: 0.9rem; color: var(--color-text-muted);">
-            <li style="margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2.5"><path d="M20 6L9 17L4 12"/></svg> Оптимізація внутрішніх HR-процесів
-            </li>
-            <li style="margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2.5"><path d="M20 6L9 17L4 12"/></svg> Підвищення утримання кадрів
-            </li>
-          </ul>
-        </div>
-
-        <div class="card reveal" style="transition-delay: 0.2s;">
+        <div class="card reveal" style="transition-delay: 0.3s;">
           <h3 class="card-title">Аналіз ринку праці</h3>
           <p class="card-text">Дослідження рівня заробітних плат за цільовими професіями, оцінка дефіциту кадрів та аналіз активності конкурентів.</p>
           <ul style="list-style: none; margin-bottom: 1.5rem; font-size: 0.9rem; color: var(--color-text-muted);">
@@ -363,12 +400,13 @@
   </section>
 
   <!-- LIST OF COOPERATING COMPANIES (PARTNERS) -->
-  <section class="section section-alt">
+  <section class="section section-alt" id="partners-section">
     <div class="container">
       <div class="decor-line decor-line-center"></div>
       <h2 class="text-center mb-2">Нам довіряють лідери ринку</h2>
       <p class="lead text-center mb-6">Кадрове агентство «Кар'єра-Дніпро» успішно співпрацює з провідними українськими та міжнародними компаніями</p>
       
+      <!-- Primary grid of 12 partners -->
       <div class="grid-3" style="gap: 1.5rem;">
         <div class="card reveal" style="padding: 2rem; background-color: var(--color-bg); justify-content: center; min-height: 130px; text-align: center;">
           <strong style="font-size: 1.15rem; color: var(--color-primary); display: block; margin-bottom: 0.4rem;">Корпорація «GIR» (Дніпро)</strong>
@@ -401,24 +439,162 @@
         </div>
         
         <div class="card reveal" style="padding: 2rem; background-color: var(--color-bg); justify-content: center; min-height: 130px; text-align: center;">
-          <strong style="font-size: 1.15rem; color: var(--color-primary); display: block; margin-bottom: 0.4rem;">ВАТ «Лінде Газ Україна»</strong>
-          <span style="font-size: 0.85rem; color: var(--color-text-muted);">Найбільший виробник та постачальник технічних газів у складі німецької Linde Group.</span>
+          <strong style="font-size: 1.15rem; color: var(--color-primary); display: block; margin-bottom: 0.4rem;">ТОВ «Астана ҚАЛА РИЛІС»</strong>
+          <span style="font-size: 0.85rem; color: var(--color-text-muted);">Казахстан, Екібастуз. Промислове та цивільне будівництво, девелопмент.</span>
         </div>
         
         <div class="card reveal" style="padding: 2rem; background-color: var(--color-bg); justify-content: center; min-height: 130px; text-align: center; transition-delay: 0.1s;">
+          <strong style="font-size: 1.15rem; color: var(--color-primary); display: block; margin-bottom: 0.4rem;">НВП «Поліпром»</strong>
+          <span style="font-size: 0.85rem; color: var(--color-text-muted);">Виробниче об'єднання: 7 заводів в Україні (промислова хімія, будматеріали, ТНС).</span>
+        </div>
+        
+        <div class="card reveal" style="padding: 2rem; background-color: var(--color-bg); justify-content: center; min-height: 130px; text-align: center; transition-delay: 0.2s;">
+          <strong style="font-size: 1.15rem; color: var(--color-primary); display: block; margin-bottom: 0.4rem;">Концерн «Tondach Gleinstatten AG»</strong>
+          <span style="font-size: 0.85rem; color: var(--color-text-muted);">Провідний австрійський виробник та постачальник керамічної черепиці.</span>
+        </div>
+
+        <div class="card reveal" style="padding: 2rem; background-color: var(--color-bg); justify-content: center; min-height: 130px; text-align: center;">
+          <strong style="font-size: 1.15rem; color: var(--color-primary); display: block; margin-bottom: 0.4rem;">FDY Capital Swiss SA</strong>
+          <span style="font-size: 0.85rem; color: var(--color-text-muted);">Швейцарська промислово-інвестиційна та фінансово-аналітична група.</span>
+        </div>
+
+        <div class="card reveal" style="padding: 2rem; background-color: var(--color-bg); justify-content: center; min-height: 130px; text-align: center; transition-delay: 0.1s;">
+          <strong style="font-size: 1.15rem; color: var(--color-primary); display: block; margin-bottom: 0.4rem;">KLW Wheelco (Interpipe Brand)</strong>
+          <span style="font-size: 0.85rem; color: var(--color-text-muted);">Швейцарія, Лугано. Дистрибуція залізничних коліс виробництва компанії Інтерпайп.</span>
+        </div>
+
+        <div class="card reveal" style="padding: 2rem; background-color: var(--color-bg); justify-content: center; min-height: 130px; text-align: center; transition-delay: 0.2s;">
+          <strong style="font-size: 1.15rem; color: var(--color-primary); display: block; margin-bottom: 0.4rem;">ТОВ «НОВІТЕК»</strong>
+          <span style="font-size: 0.85rem; color: var(--color-text-muted);">Інноваційне підприємство з розробки та впровадження сучасних промислових рішень.</span>
+        </div>
+      </div>
+
+      <!-- Collapsible container for secondary partners (23 companies) -->
+      <div id="all-partners-grid" class="partners-collapse grid-3" style="gap: 1.5rem; margin-top: 1.5rem;">
+        <div class="card" style="padding: 2rem; background-color: var(--color-bg); justify-content: center; min-height: 130px; text-align: center;">
+          <strong style="font-size: 1.15rem; color: var(--color-primary); display: block; margin-bottom: 0.4rem;">ВАТ «Лінде Газ Україна»</strong>
+          <span style="font-size: 0.85rem; color: var(--color-text-muted);">Виробництво технічних газів у складі німецької Linde Group.</span>
+        </div>
+        
+        <div class="card" style="padding: 2rem; background-color: var(--color-bg); justify-content: center; min-height: 130px; text-align: center;">
           <strong style="font-size: 1.15rem; color: var(--color-primary); display: block; margin-bottom: 0.4rem;">ТОВ «Атраком» (Київ)</strong>
           <span style="font-size: 0.85rem; color: var(--color-text-muted);">Загальнонаціональний лідер будівництва волоконно-оптичних ліній зв'язку.</span>
         </div>
         
-        <div class="card reveal" style="padding: 2rem; background-color: var(--color-bg); justify-content: center; min-height: 130px; text-align: center; transition-delay: 0.2s;">
+        <div class="card" style="padding: 2rem; background-color: var(--color-bg); justify-content: center; min-height: 130px; text-align: center;">
           <strong style="font-size: 1.15rem; color: var(--color-primary); display: block; margin-bottom: 0.4rem;">«HILTI - Україна» (Київ)</strong>
-          <span style="font-size: 0.85rem; color: var(--color-text-muted);">Постачальник професійного будівельного інструменту та кріпильних систем Hilti.</span>
+          <span style="font-size: 0.85rem; color: var(--color-text-muted);">Постачальник професійного будівельного інструменту та систем кріплення.</span>
         </div>
+
+        <div class="card" style="padding: 2rem; background-color: var(--color-bg); justify-content: center; min-height: 130px; text-align: center;">
+          <strong style="font-size: 1.15rem; color: var(--color-primary); display: block; margin-bottom: 0.4rem;">ТОВ «ДАРЕКС - ЕНЕРГО» (Дніпро)</strong>
+          <span style="font-size: 0.85rem; color: var(--color-text-muted);">Спеціалізоване підприємство у сфері незалежного електропостачання.</span>
+        </div>
+
+        <div class="card" style="padding: 2rem; background-color: var(--color-bg); justify-content: center; min-height: 130px; text-align: center;">
+          <strong style="font-size: 1.15rem; color: var(--color-primary); display: block; margin-bottom: 0.4rem;">ПрАТ «Дніпровський крохмалепатоковий комбінат»</strong>
+          <span style="font-size: 0.85rem; color: var(--color-text-muted);">Провідний український виробник крохмалю, патоки та харчових інгредієнтів.</span>
+        </div>
+
+        <div class="card" style="padding: 2rem; background-color: var(--color-bg); justify-content: center; min-height: 130px; text-align: center;">
+          <strong style="font-size: 1.15rem; color: var(--color-primary); display: block; margin-bottom: 0.4rem;">ГО «Довіра Дніпро»</strong>
+          <span style="font-size: 0.85rem; color: var(--color-text-muted);">Дистриб'ютор вітчизняних та зарубіжних виробників продуктів харчування.</span>
+        </div>
+
+        <div class="card" style="padding: 2rem; background-color: var(--color-bg); justify-content: center; min-height: 130px; text-align: center;">
+          <strong style="font-size: 1.15rem; color: var(--color-primary); display: block; margin-bottom: 0.4rem;">ТОВ Завод «СВІТОНДЕЙЛ»</strong>
+          <span style="font-size: 0.85rem; color: var(--color-text-muted);">Виробництво м'яких покрівельних, гідроізоляційних та теплоізоляційних матеріалів.</span>
+        </div>
+
+        <div class="card" style="padding: 2rem; background-color: var(--color-bg); justify-content: center; min-height: 130px; text-align: center;">
+          <strong style="font-size: 1.15rem; color: var(--color-primary); display: block; margin-bottom: 0.4rem;">ТОВ НВП «Дніпро-Контакт»</strong>
+          <span style="font-size: 0.85rem; color: var(--color-text-muted);">Український виробник лакофарбової продукції високої якості.</span>
+        </div>
+
+        <div class="card" style="padding: 2rem; background-color: var(--color-bg); justify-content: center; min-height: 130px; text-align: center;">
+          <strong style="font-size: 1.15rem; color: var(--color-primary); display: block; margin-bottom: 0.4rem;">ПВТФ «Кріоліт-Дніпро»</strong>
+          <span style="font-size: 0.85rem; color: var(--color-text-muted);">Провідне кондитерське підприємство та виробник солодощів у центральній Україні.</span>
+        </div>
+
+        <div class="card" style="padding: 2rem; background-color: var(--color-bg); justify-content: center; min-height: 130px; text-align: center;">
+          <strong style="font-size: 1.15rem; color: var(--color-primary); display: block; margin-bottom: 0.4rem;">ПрАТ «ІНТЕРКЕРАМА»</strong>
+          <span style="font-size: 0.85rem; color: var(--color-text-muted);">Вітчизняний лідер з виробництва керамічної плитки та декоративних елементів.</span>
+        </div>
+
+        <div class="card" style="padding: 2rem; background-color: var(--color-bg); justify-content: center; min-height: 130px; text-align: center;">
+          <strong style="font-size: 1.15rem; color: var(--color-primary); display: block; margin-bottom: 0.4rem;">Inotech Bahn und Industrietechnik SA</strong>
+          <span style="font-size: 0.85rem; color: var(--color-text-muted);">Швейцарія, Лугано. Промислова група компаній (інженерія та машинобудування).</span>
+        </div>
+
+        <div class="card" style="padding: 2rem; background-color: var(--color-bg); justify-content: center; min-height: 130px; text-align: center;">
+          <strong style="font-size: 1.15rem; color: var(--color-primary); display: block; margin-bottom: 0.4rem;">ВАТ «Рапід - інжиніринг»</strong>
+          <span style="font-size: 0.85rem; color: var(--color-text-muted);">Будівництво, реконструкція та монтаж інженерних мереж тепло- й водопостачання.</span>
+        </div>
+
+        <div class="card" style="padding: 2rem; background-color: var(--color-bg); justify-content: center; min-height: 130px; text-align: center;">
+          <strong style="font-size: 1.15rem; color: var(--color-primary); display: block; margin-bottom: 0.4rem;">ТПГ «Гільдія»</strong>
+          <span style="font-size: 0.85rem; color: var(--color-text-muted);">Будівництво котеджних селищ, виробництво дерев'яних виробів та віконних систем.</span>
+        </div>
+
+        <div class="card" style="padding: 2rem; background-color: var(--color-bg); justify-content: center; min-height: 130px; text-align: center;">
+          <strong style="font-size: 1.15rem; color: var(--color-primary); display: block; margin-bottom: 0.4rem;">ЗАТ «Солді та Ко»</strong>
+          <span style="font-size: 0.85rem; color: var(--color-text-muted);">Дистриб'ютор професійного кріплення ТМ METALVIS та герметиків SOUDAL.</span>
+        </div>
+
+        <div class="card" style="padding: 2rem; background-color: var(--color-bg); justify-content: center; min-height: 130px; text-align: center;">
+          <strong style="font-size: 1.15rem; color: var(--color-primary); display: block; margin-bottom: 0.4rem;">ТОВ «Кісан»</strong>
+          <span style="font-size: 0.85rem; color: var(--color-text-muted);">Проектування, монтаж та сервісне обслуговування плавальних басейнів.</span>
+        </div>
+
+        <div class="card" style="padding: 2rem; background-color: var(--color-bg); justify-content: center; min-height: 130px; text-align: center;">
+          <strong style="font-size: 1.15rem; color: var(--color-primary); display: block; margin-bottom: 0.4rem;">"Hertz lease"</strong>
+          <span style="font-size: 0.85rem; color: var(--color-text-muted);">Міжнародний лізинг легкового та комерційного автотранспорту.</span>
+        </div>
+
+        <div class="card" style="padding: 2rem; background-color: var(--color-bg); justify-content: center; min-height: 130px; text-align: center;">
+          <strong style="font-size: 1.15rem; color: var(--color-primary); display: block; margin-bottom: 0.4rem;">ТОВ «САН ІнБев Україна»</strong>
+          <span style="font-size: 0.85rem; color: var(--color-text-muted);">Найбільша броварна компанія (Чернігівське, Stella Artois, Beck's, Leffe).</span>
+        </div>
+
+        <div class="card" style="padding: 2rem; background-color: var(--color-bg); justify-content: center; min-height: 130px; text-align: center;">
+          <strong style="font-size: 1.15rem; color: var(--color-primary); display: block; margin-bottom: 0.4rem;">Інжинірингова компанія «Фортес»</strong>
+          <span style="font-size: 0.85rem; color: var(--color-text-muted);">Професійне управління складними промисловими та будівельними проектами.</span>
+        </div>
+
+        <div class="card" style="padding: 2rem; background-color: var(--color-bg); justify-content: center; min-height: 130px; text-align: center;">
+          <strong style="font-size: 1.15rem; color: var(--color-primary); display: block; margin-bottom: 0.4rem;">ТОВ «Дніпро Логістик»</strong>
+          <span style="font-size: 0.85rem; color: var(--color-text-muted);">Транспортно-експедиційне обслуговування національних вантажоперевезень.</span>
+        </div>
+
+        <div class="card" style="padding: 2rem; background-color: var(--color-bg); justify-content: center; min-height: 130px; text-align: center;">
+          <strong style="font-size: 1.15rem; color: var(--color-primary); display: block; margin-bottom: 0.4rem;">ТОВ «ПромПостач»</strong>
+          <span style="font-size: 0.85rem; color: var(--color-text-muted);">Комплексне матеріально-технічне забезпечення промислових підприємств.</span>
+        </div>
+
+        <div class="card" style="padding: 2rem; background-color: var(--color-bg); justify-content: center; min-height: 130px; text-align: center;">
+          <strong style="font-size: 1.15rem; color: var(--color-primary); display: block; margin-bottom: 0.4rem;">ТОВ «УкрПромТех»</strong>
+          <span style="font-size: 0.85rem; color: var(--color-text-muted);">Виробництво металоконструкцій та постачання сортового металопрокату.</span>
+        </div>
+
+        <div class="card" style="padding: 2rem; background-color: var(--color-bg); justify-content: center; min-height: 130px; text-align: center;">
+          <strong style="font-size: 1.15rem; color: var(--color-primary); display: block; margin-bottom: 0.4rem;">Компанія «LogicFlow Solutions»</strong>
+          <span style="font-size: 0.85rem; color: var(--color-text-muted);">Розробка автоматизованих рішень та інтеграція корпоративних IT-систем.</span>
+        </div>
+
+        <div class="card" style="padding: 2rem; background-color: var(--color-bg); justify-content: center; min-height: 130px; text-align: center;">
+          <strong style="font-size: 1.15rem; color: var(--color-primary); display: block; margin-bottom: 0.4rem;">ТОВ «Логістик-Груп»</strong>
+          <span style="font-size: 0.85rem; color: var(--color-text-muted);">Складська логістика класу А, обробка, 3PL-послуги та транспортний супровід.</span>
+        </div>
+      </div>
+
+      <!-- Toggle Button -->
+      <div class="toggle-partners-btn-wrapper" style="text-align: center; margin-top: 2.5rem;">
+        <button id="toggle-partners-btn" class="btn btn-secondary">Показати всіх партнерів</button>
       </div>
     </div>
   </section>
-
-  <!-- INTERACTIVE FAQ (ACCORDION) -->
+  
+<!-- INTERACTIVE FAQ (ACCORDION) -->
   <section class="section section-alt">
     <div class="container" style="max-width: 800px;">
       <div class="decor-line decor-line-center"></div>

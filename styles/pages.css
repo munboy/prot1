@@ -752,3 +752,125 @@
   from { opacity: 0; transform: translateY(5px); }
   to { opacity: 1; transform: translateY(0); }
 }
+
+/* --- COLORFUL INFOGRAPHICS & ANIMATIONS --- */
+.svg-grid-line {
+  stroke: var(--color-border);
+  stroke-width: 1;
+  stroke-dasharray: 4 4;
+}
+
+.svg-trend-line {
+  stroke: url(#gradient-accent);
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  filter: drop-shadow(0px 8px 16px rgba(232, 124, 63, 0.4));
+  animation: drawPath 2s ease-out forwards;
+}
+
+.svg-trend-line-secondary {
+  stroke: url(#gradient-primary-glow);
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  filter: drop-shadow(0px 6px 12px rgba(26, 42, 68, 0.25));
+  animation: drawPath 2.5s ease-out forwards;
+}
+
+.svg-area-fill {
+  fill: url(#gradient-area-accent);
+  animation: fadeInArea 2s ease-out forwards;
+}
+
+.svg-area-fill-secondary {
+  fill: url(#gradient-area-primary);
+  animation: fadeInArea 2.5s ease-out forwards;
+}
+
+.svg-bar {
+  fill: url(#gradient-primary);
+  animation: growBar 1.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  transform-origin: bottom;
+}
+
+.svg-bar-accent {
+  fill: url(#gradient-accent);
+  animation: growBar 1.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  transform-origin: bottom;
+}
+
+.svg-node-glowing {
+  fill: var(--color-bg);
+  stroke: var(--color-accent);
+  stroke-width: 3;
+  filter: drop-shadow(0px 0px 8px var(--color-accent));
+  animation: pulseNode 2s infinite alternate;
+}
+
+.svg-node-primary {
+  fill: var(--color-bg);
+  stroke: var(--color-primary);
+  stroke-width: 3;
+  filter: drop-shadow(0px 0px 8px var(--color-primary));
+  animation: pulseNode 2s infinite alternate 0.5s;
+}
+
+.svg-card-bg {
+  fill: var(--color-bg);
+  stroke: var(--color-border);
+  stroke-width: 1;
+  filter: drop-shadow(0px 10px 20px rgba(26, 42, 68, 0.05));
+  transition: var(--transition);
+}
+
+.svg-card-bg:hover {
+  stroke-color: var(--color-border-hover);
+  filter: drop-shadow(0px 15px 25px rgba(26, 42, 68, 0.08));
+}
+
+/* Animations keyframes */
+@keyframes drawPath {
+  from {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fadeInArea {
+  from { opacity: 0; }
+  to { opacity: 0.15; }
+}
+
+@keyframes growBar {
+  from { transform: scaleY(0); }
+  to { transform: scaleY(1); }
+}
+
+@keyframes pulseNode {
+  from { r: 6; stroke-width: 3; }
+  to { r: 8; stroke-width: 4; }
+}
+
+/* Collapsible Partners List */
+.partners-collapse {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.6s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.6s ease;
+}
+
+.partners-collapse.is-open {
+  opacity: 1;
+}
+
+.toggle-partners-btn-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
