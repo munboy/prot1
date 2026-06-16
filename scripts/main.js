@@ -659,7 +659,6 @@ document.addEventListener('DOMContentLoaded', () => {
     togglePartnersBtn.addEventListener('click', () => {
       const isOpen = partnersCollapse.classList.contains('is-open');
       if (isOpen) {
-        partnersCollapse.style.maxHeight = null;
         partnersCollapse.classList.remove('is-open');
         togglePartnersBtn.textContent = 'Показати всіх партнерів';
         // Scroll back up to the partners section header
@@ -669,7 +668,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       } else {
         partnersCollapse.classList.add('is-open');
-        partnersCollapse.style.maxHeight = partnersCollapse.scrollHeight + 'px';
         togglePartnersBtn.textContent = 'Приховати';
       }
     });
