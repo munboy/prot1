@@ -66,85 +66,61 @@
         </div>
       </div>
       <div class="hero-graphic reveal" style="transition-delay: 0.2s;">
-        <!-- Vibrant Animated B2B Performance growth curve Infographic -->
+        <!-- Recruitment Funnel: how we narrow from 15,000 candidates to 1 perfect hire -->
         <svg viewBox="0 0 500 500" class="hero-pattern" xmlns="http://www.w3.org/2000/svg">
-          <defs>
-            <linearGradient id="gradient-accent" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stop-color="#FF9D66"/>
-              <stop offset="100%" stop-color="#E87C3F"/>
-            </linearGradient>
-            <linearGradient id="gradient-primary" x1="0%" y1="100%" x2="0%" y2="0%">
-              <stop offset="0%" stop-color="#1A2A44"/>
-              <stop offset="100%" stop-color="#3b5887"/>
-            </linearGradient>
-            <linearGradient id="gradient-primary-glow" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stop-color="#4F46E5"/>
-              <stop offset="100%" stop-color="#3B82F6"/>
-            </linearGradient>
-            <linearGradient id="gradient-area-accent" x1="0%" y1="0%" x2="0%" y2="100%">
-              <stop offset="0%" stop-color="#E87C3F" stop-opacity="0.3"/>
-              <stop offset="100%" stop-color="#E87C3F" stop-opacity="0.0"/>
-            </linearGradient>
-            <linearGradient id="gradient-area-primary" x1="0%" y1="0%" x2="0%" y2="100%">
-              <stop offset="0%" stop-color="#3B82F6" stop-opacity="0.2"/>
-              <stop offset="100%" stop-color="#3B82F6" stop-opacity="0.0"/>
-            </linearGradient>
-          </defs>
 
-          <!-- Outer Frame -->
+          <!-- Frame -->
           <rect x="20" y="20" width="460" height="460" rx="12" fill="var(--color-bg)" stroke="var(--color-border)" stroke-width="1.5"/>
-          
-          <!-- Background Grid Lines -->
-          <line x1="50" y1="90" x2="450" y2="90" class="svg-grid-line"/>
-          <line x1="50" y1="170" x2="450" y2="170" class="svg-grid-line"/>
-          <line x1="50" y1="250" x2="450" y2="250" class="svg-grid-line"/>
-          <line x1="50" y1="330" x2="450" y2="330" class="svg-grid-line"/>
-          <line x1="50" y1="410" x2="450" y2="410" stroke="var(--color-border)" stroke-width="1.5"/>
 
-          <!-- Grid Vertical Scale Lines -->
-          <line x1="110" y1="90" x2="110" y2="410" class="svg-grid-line"/>
-          <line x1="190" y1="90" x2="190" y2="410" class="svg-grid-line"/>
-          <line x1="270" y1="90" x2="270" y2="410" class="svg-grid-line"/>
-          <line x1="350" y1="90" x2="350" y2="410" class="svg-grid-line"/>
-          <line x1="430" y1="90" x2="430" y2="410" stroke="var(--color-border)" stroke-width="1.5"/>
+          <!-- Title -->
+          <text x="250" y="50" font-family="var(--font-sans)" font-size="9" font-weight="700" fill="var(--color-text-muted)" text-anchor="middle" letter-spacing="1.5">ВОРОНКА ВІДБОРУ КАНДИДАТІВ</text>
 
-          <!-- Area Fills (under the curves) -->
-          <path d="M 110 410 L 110 320 Q 190 280 270 190 T 430 130 L 430 410 Z" class="svg-area-fill-secondary"/>
-          <path d="M 110 410 L 110 240 Q 190 150 270 260 T 430 95 L 430 410 Z" class="svg-area-fill"/>
+          <!-- Stage 1: База агентства (widest) -->
+          <rect x="55" y="62" width="390" height="68" rx="5" fill="#E87C3F" fill-opacity="0.10" stroke="#E87C3F" stroke-width="1.5"/>
+          <text x="250" y="90" font-family="var(--font-serif)" font-size="13.5" font-weight="700" fill="var(--color-primary)" text-anchor="middle">15 000+ резюме в базі агентства</text>
+          <text x="250" y="110" font-family="var(--font-sans)" font-size="8.5" fill="var(--color-text-muted)" text-anchor="middle">Власна база перевірених фахівців різних галузей</text>
 
-          <!-- Trend Lines (Main Orange) -->
-          <path d="M 110 240 Q 190 150 270 260 T 430 95" class="svg-trend-line"/>
-          
-          <!-- Trend Lines (Secondary Blue/Navy) -->
-          <path d="M 110 320 Q 190 280 270 190 T 430 130" class="svg-trend-line-secondary"/>
+          <!-- Connector arrow 1→2 -->
+          <line x1="250" y1="130" x2="250" y2="140" stroke="var(--color-border)" stroke-width="1.5"/>
+          <polygon points="245,139 250,148 255,139" fill="var(--color-border)"/>
 
-          <!-- Glowing Data Nodes (Intersections) -->
-          <circle cx="190" cy="180" r="7" class="svg-node-glowing"/>
-          <circle cx="270" cy="260" r="7" class="svg-node-glowing"/>
-          <circle cx="350" cy="170" r="7" class="svg-node-primary"/>
-          <circle cx="430" cy="95" r="8" class="svg-node-glowing" style="animation-duration: 1.5s;"/>
+          <!-- Stage 2: Первинний відбір -->
+          <rect x="90" y="150" width="320" height="68" rx="5" fill="var(--color-primary)" fill-opacity="0.06" stroke="var(--color-primary)" stroke-width="1" stroke-opacity="0.3"/>
+          <text x="250" y="178" font-family="var(--font-serif)" font-size="13.5" font-weight="700" fill="var(--color-primary)" text-anchor="middle">~50 релевантних кандидатів</text>
+          <text x="250" y="198" font-family="var(--font-sans)" font-size="8.5" fill="var(--color-text-muted)" text-anchor="middle">Первинний відбір за вимогами конкретної вакансії</text>
 
-          <!-- Floating Dashboard Metric Info Cards (SVG Embedded) -->
-          <g transform="translate(60, 45)" class="reveal" style="transition-delay: 0.4s;">
-            <rect x="0" y="0" width="170" height="60" rx="8" class="svg-card-bg"/>
-            <circle cx="25" cy="30" r="10" fill="#E87C3F" fill-opacity="0.15"/>
-            <circle cx="25" cy="30" r="4" fill="#E87C3F"/>
-            <text x="45" y="24" font-family="var(--font-sans)" font-size="9" font-weight="700" fill="var(--color-primary)">КУМУЛЯТИВНИЙ НАЙМ</text>
-            <text x="45" y="42" font-family="var(--font-serif)" font-size="14" font-weight="700" fill="var(--color-accent)">94% Вакансій Закрито</text>
-          </g>
+          <!-- Connector arrow 2→3 -->
+          <line x1="250" y1="218" x2="250" y2="228" stroke="var(--color-border)" stroke-width="1.5"/>
+          <polygon points="245,227 250,236 255,227" fill="var(--color-border)"/>
 
-          <g transform="translate(260, 310)" class="reveal" style="transition-delay: 0.6s;">
-            <rect x="0" y="0" width="160" height="60" rx="8" class="svg-card-bg"/>
-            <circle cx="25" cy="30" r="10" fill="#3B82F6" fill-opacity="0.15"/>
-            <circle cx="25" cy="30" r="4" fill="#3B82F6"/>
-            <text x="45" y="24" font-family="var(--font-sans)" font-size="9" font-weight="700" fill="var(--color-text-muted)">ЕКОНОМІЯ БЮДЖЕТУ</text>
-            <text x="45" y="42" font-family="var(--font-serif)" font-size="14" font-weight="700" fill="var(--color-primary)">до 35% витрат</text>
-          </g>
+          <!-- Stage 3: Глибоке інтерв'ю -->
+          <rect x="128" y="238" width="244" height="68" rx="5" fill="#E87C3F" fill-opacity="0.16" stroke="#E87C3F" stroke-width="1.5"/>
+          <text x="250" y="266" font-family="var(--font-serif)" font-size="13.5" font-weight="700" fill="var(--color-primary)" text-anchor="middle">10 фіналістів</text>
+          <text x="250" y="286" font-family="var(--font-sans)" font-size="8.5" fill="var(--color-text-muted)" text-anchor="middle">Глибоке інтерв'ю з рекрутером агентства</text>
+
+          <!-- Connector arrow 3→4 -->
+          <line x1="250" y1="306" x2="250" y2="316" stroke="var(--color-border)" stroke-width="1.5"/>
+          <polygon points="245,315 250,324 255,315" fill="var(--color-border)"/>
+
+          <!-- Stage 4: Презентація замовнику -->
+          <rect x="168" y="326" width="164" height="68" rx="5" fill="var(--color-primary)" fill-opacity="0.09" stroke="var(--color-primary)" stroke-width="1"/>
+          <text x="250" y="354" font-family="var(--font-serif)" font-size="13" font-weight="700" fill="var(--color-primary)" text-anchor="middle">3–5 кандидатів</text>
+          <text x="250" y="374" font-family="var(--font-sans)" font-size="8.5" fill="var(--color-text-muted)" text-anchor="middle">Презентація та фінальні співбесіди</text>
+
+          <!-- Connector arrow 4→5 (orange = success) -->
+          <line x1="250" y1="394" x2="250" y2="404" stroke="var(--color-accent)" stroke-width="1.5"/>
+          <polygon points="245,403 250,412 255,403" fill="var(--color-accent)"/>
+
+          <!-- Stage 5: Прийнятий! (narrowest, solid orange) -->
+          <rect x="207" y="414" width="86" height="58" rx="5" fill="var(--color-accent)"/>
+          <text x="250" y="438" font-family="var(--font-serif)" font-size="13" font-weight="700" fill="white" text-anchor="middle">1 найнятий</text>
+          <text x="250" y="456" font-family="var(--font-sans)" font-size="8.5" font-weight="700" fill="rgba(255,255,255,0.92)" text-anchor="middle">ФАХІВЕЦЬ</text>
+
+          <!-- Success rate badge (top-right) -->
+          <rect x="340" y="36" width="120" height="44" rx="6" fill="var(--color-bg)" stroke="var(--color-accent)" stroke-width="1.5"/>
+          <text x="400" y="56" font-family="var(--font-serif)" font-size="16" font-weight="700" fill="var(--color-accent)" text-anchor="middle">94%</text>
+          <text x="400" y="72" font-family="var(--font-sans)" font-size="8" fill="var(--color-primary)" text-anchor="middle">вакансій закрито</text>
         </svg>
-        <div class="hero-card-badge hero-card-badge-1" style="top: 20%; left: -5%;">
-          <div class="badge-number">90 днів</div>
-          <div class="badge-text">гарантійної<br>заміни</div>
-        </div>
       </div>
     </div>
   </section>
