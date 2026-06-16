@@ -1,23 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,400&display=swap');
 
 /* --- DESIGN TOKENS & VARIABLES --- */
 :root {
   /* Colors */
-  --color-primary: #1A2A44;       /* Deep Navy */
-  --color-primary-light: #2A3D5C; /* Medium Navy */
-  --color-primary-dark: #0D1726;  /* Darker Navy */
-  --color-accent: #E87C3F;        /* Muted Terracotta Orange */
-  --color-accent-hover: #D06B33;  /* Hover Orange */
-  --color-bg: #FFFFFF;            /* Pure White */
-  --color-bg-alt: #F5F7FA;        /* Cold White / Light Grey */
-  --color-text: #2B303A;          /* Charcoal */
-  --color-text-muted: #677180;    /* Muted Slate Grey */
+  --color-primary: #0F2D59;       /* Vibrant Deep Navy */
+  --color-primary-light: #1A467D; /* Medium Navy */
+  --color-primary-dark: #07152B;  /* Darker Navy */
+  --color-accent: #FF5E2B;        /* Vibrant Orange */
+  --color-accent-hover: #E04B1A;  /* Hover Orange */
+  --color-bg: #FFFDF4;            /* Glossy Light-Light Yellow / Cream */
+  --color-bg-alt: #FAF7E5;        /* Soft Cream Alt */
+  --color-text: #22262F;          /* Rich Charcoal */
+  --color-text-muted: #5E6977;    /* Slate Grey */
   --color-text-light: #FFFFFF;    /* White text */
-  --color-border: #E2E8F0;        /* Light Grey Border */
-  --color-border-hover: #CBD5E1;  /* Medium Border */
+  --color-border: #E8E3CA;        /* Soft Warm Border */
+  --color-border-hover: #D4CDAD;  /* Hover Border */
   
   /* Fonts */
-  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-sans: 'Outfit', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   --font-serif: 'Source Serif 4', Georgia, serif;
   
   /* Layout */
@@ -29,14 +29,14 @@
   --fs-h1: clamp(2.5rem, 5vw, 3.75rem);
   --fs-h2: clamp(1.8rem, 4vw, 2.5rem);
   --fs-h3: clamp(1.4rem, 3vw, 1.8rem);
-  --fs-body: 1rem;
-  --fs-small: 0.875rem;
+  --fs-body: 1.05rem;             /* Slightly larger for Outfit readability */
+  --fs-small: 0.9rem;
   
   /* Borders */
-  --radius: 4px;                  /* Restrained border radius */
+  --radius: 16px;                 /* Softer, rounder corners for business card style */
   
   /* Transitions */
-  --transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* --- RESET --- */
@@ -58,6 +58,10 @@ body {
   line-height: 1.6;
   color: var(--color-text);
   background-color: var(--color-bg);
+  background-image: 
+    radial-gradient(circle at 10% 15%, rgba(255, 94, 43, 0.05) 0%, transparent 45%),
+    radial-gradient(circle at 85% 75%, rgba(15, 45, 89, 0.04) 0%, transparent 45%);
+  background-attachment: fixed;
   overflow-x: hidden;
 }
 
