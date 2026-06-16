@@ -64,7 +64,7 @@
 }
 
 .btn-link::after {
-  content: 'в†’';
+  content: '\2192';
   transition: transform 0.2s ease;
 }
 
