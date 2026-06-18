@@ -59,8 +59,9 @@ body {
   color: var(--color-text);
   background-color: var(--color-bg);
   background-image: 
-    radial-gradient(circle at 10% 15%, rgba(255, 94, 43, 0.05) 0%, transparent 45%),
-    radial-gradient(circle at 85% 75%, rgba(15, 45, 89, 0.04) 0%, transparent 45%);
+    radial-gradient(circle at 10% 15%, rgba(255, 94, 43, 0.12) 0%, transparent 45%),
+    radial-gradient(circle at 85% 20%, rgba(26, 92, 185, 0.12) 0%, transparent 45%),
+    radial-gradient(circle at 50% 75%, rgba(234, 179, 8, 0.08) 0%, transparent 50%);
   background-attachment: fixed;
   overflow-x: hidden;
 }
@@ -73,15 +74,28 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
 }
 
-h1 {
+.text-gradient {
+  background: linear-gradient(135deg, #0F2D59 10%, #2563EB 55%, #FF5E2B 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+h1, .hero-title, .text-gradient-header {
   font-size: var(--fs-h1);
   letter-spacing: -0.02em;
+  background: linear-gradient(135deg, #0F2D59 10%, #2563EB 55%, #FF5E2B 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  line-height: 1.15;
 }
 
 h2 {
   font-size: var(--fs-h2);
   letter-spacing: -0.01em;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  position: relative;
 }
 
 h3 {

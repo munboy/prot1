@@ -251,14 +251,36 @@
   position: absolute;
   top: 1.5rem;
   right: 1.5rem;
-  background-color: rgba(232, 124, 63, 0.08);
-  color: var(--color-accent);
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   font-weight: 700;
-  padding: 0.35rem 0.75rem;
+  padding: 0.4rem 0.85rem;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.06em;
   border-radius: 20px;
+  color: #FFFFFF;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  background-color: var(--color-accent);
+}
+
+.vacancy-badge.badge-it {
+  background: linear-gradient(135deg, #2563EB 0%, #7C3AED 100%);
+  box-shadow: 0 4px 10px rgba(124, 58, 237, 0.2);
+}
+.vacancy-badge.badge-sales {
+  background: linear-gradient(135deg, #FF5E2B 0%, #FF8A00 100%);
+  box-shadow: 0 4px 10px rgba(255, 94, 43, 0.2);
+}
+.vacancy-badge.badge-production {
+  background: linear-gradient(135deg, #0D9488 0%, #0891B2 100%);
+  box-shadow: 0 4px 10px rgba(13, 148, 136, 0.2);
+}
+.vacancy-badge.badge-management {
+  background: linear-gradient(135deg, #7000FF 0%, #FF007A 100%);
+  box-shadow: 0 4px 10px rgba(112, 0, 255, 0.2);
+}
+.vacancy-badge.badge-finance {
+  background: linear-gradient(135deg, #059669 0%, #22C55E 100%);
+  box-shadow: 0 4px 10px rgba(5, 150, 105, 0.2);
 }
 
 /* --- ABOUT PAGE TEAM --- */

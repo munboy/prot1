@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
   /* --- DYNAMICALLY REPLACE CONTACTS ACROSS ALL PAGES --- */
   const applyContactsGlobally = () => {
     const contacts = getContacts();
-    
+
     // Replace telephone links and text
     const telElements = document.querySelectorAll('a[href^="tel:"]');
     telElements.forEach((el, index) => {
@@ -135,7 +135,7 @@ document.addEventListener('DOMContentLoaded', () => {
   /* --- DYNAMICALLY REPLACE PAGE CONTENT --- */
   const applyPageContent = () => {
     const pages = getPages();
-    
+
     // index.html elements
     const homeHeroTitle = document.querySelector('.hero:not(.hero-alt) .hero-title');
     const homeHeroDesc = document.querySelector('.hero:not(.hero-alt) .hero-desc');
@@ -147,11 +147,11 @@ document.addEventListener('DOMContentLoaded', () => {
     // about.html elements
     const aboutTitle = document.querySelector('.hero-alt .hero-title');
     const aboutMission = document.querySelector('.section .about-mission-text'); // We can add this class or find by content
-    
+
     if (aboutTitle && window.location.pathname.includes('about.html')) {
       aboutTitle.textContent = pages.about_title;
     }
-    
+
     // Find mission text paragraph in about.html
     const paragraphs = document.querySelectorAll('.section p');
     paragraphs.forEach(p => {
@@ -173,7 +173,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const vacancies = getVacancies();
 
     const getCategoryBadgeLabel = (cat) => {
-      switch(cat) {
+      switch (cat) {
         case 'it': return 'IT-Сфера';
         case 'sales': return 'Продажі';
         case 'production': return 'Виробництво';
@@ -192,7 +192,7 @@ document.addEventListener('DOMContentLoaded', () => {
       card.style.transitionDelay = `${index * 0.05}s`;
 
       card.innerHTML = `
-        <span class="vacancy-badge">${getCategoryBadgeLabel(vac.category)}</span>
+        <span class="vacancy-badge badge-${vac.category}">${getCategoryBadgeLabel(vac.category)}</span>
         <h3 class="card-title" style="margin-top: 0.5rem; margin-bottom: 0.5rem;">${vac.title}</h3>
         <div class="vacancy-salary">${vac.salary}</div>
         <div class="vacancy-meta">
@@ -233,7 +233,7 @@ document.addEventListener('DOMContentLoaded', () => {
   /* --- MOBILE MENU --- */
   const hamburger = document.querySelector('.hamburger');
   const mobileNav = document.querySelector('.mobile-nav');
-  
+
   if (hamburger && mobileNav) {
     hamburger.addEventListener('click', () => {
       hamburger.classList.toggle('is-active');
@@ -258,7 +258,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const item = header.parentElement;
       const content = header.nextElementSibling;
       const isActive = item.classList.contains('is-active');
-      
+
       const parent = item.parentElement;
       const siblings = parent.querySelectorAll('.accordion-item');
       siblings.forEach(sib => {
@@ -266,7 +266,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const sibContent = sib.querySelector('.accordion-content');
         if (sibContent) sibContent.style.maxHeight = null;
       });
-      
+
       if (!isActive) {
         item.classList.add('is-active');
         content.style.maxHeight = content.scrollHeight + 'px';
@@ -336,7 +336,7 @@ document.addEventListener('DOMContentLoaded', () => {
     `;
     document.body.insertAdjacentHTML('beforeend', modalHtml);
   };
-  
+
   injectModal();
 
   const successModal = document.getElementById('success-modal');
@@ -392,7 +392,7 @@ document.addEventListener('DOMContentLoaded', () => {
   /* --- DRAG AND DROP FILE MOCK --- */
   const dropZone = document.querySelector('.file-upload');
   const fileInput = document.getElementById('resume-file');
-  
+
   if (dropZone && fileInput) {
     dropZone.addEventListener('click', () => fileInput.click());
     fileInput.addEventListener('change', () => {
@@ -512,7 +512,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const statsVacanciesCount = document.getElementById('stats-vacancies-count');
 
     const getCategoryLabel = (cat) => {
-      switch(cat) {
+      switch (cat) {
         case 'it': return 'IT & Технології';
         case 'sales': return 'Продажі & Маркетинг';
         case 'production': return 'Виробництво & Інженерія';
@@ -526,7 +526,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (!vacanciesList) return;
       const vacancies = getVacancies();
       vacanciesList.innerHTML = '';
-      
+
       if (vacanciesCounter) vacanciesCounter.textContent = `Усього вакансій: ${vacancies.length}`;
       if (statsVacanciesCount) statsVacanciesCount.textContent = vacancies.length;
 
@@ -648,7 +648,7 @@ document.addEventListener('DOMContentLoaded', () => {
       threshold: 0.05,
       rootMargin: '0px 0px -30px 0px'
     });
-    
+
     revealElements.forEach(el => revealObserver.observe(el));
   }
 
