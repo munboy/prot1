@@ -16,6 +16,24 @@
   --color-border: rgba(85, 122, 60, 0.15); /* Soft Olive-Green Border */
   --color-border-hover: rgba(85, 122, 60, 0.35);
   
+  /* Component Specific Tokens */
+  --text-gradient: linear-gradient(135deg, #2E421A 0%, #557A3C 60%, #88A674 100%);
+  --text-gradient-hero: linear-gradient(135deg, #2E421A 10%, #557A3C 60%, #88A674 100%);
+  --card-bg: rgba(255, 255, 255, 0.82);
+  --card-shadow: inset 0 20px 20px -20px rgba(255, 255, 255, 0.7), inset 0 0 0 1px rgba(255, 255, 255, 0.5), 0 8px 32px rgba(85, 122, 60, 0.03);
+  --btn-shadow: rgba(85, 122, 60, 0.3);
+  --btn-primary-gradient: linear-gradient(135deg, #557A3C 0%, #6E9B4E 50%, #557A3C 100%);
+  --btn-outline-white-hover-gradient: linear-gradient(135deg, #557A3C 0%, #6E9B4E 100%);
+  --modal-icon-bg: rgba(85, 122, 60, 0.12);
+  
+  /* SVG Custom Tokens */
+  --chart-text-dark: #466334;
+  --chart-text-accent: #557A3C;
+  --chart-kpi-bg: rgba(255, 255, 255, 0.75);
+  --chart-frame-bg: rgba(255, 255, 255, 0.85);
+  --chart-grid-line: rgba(85, 122, 60, 0.1);
+  --pointer-pulse: rgba(85, 122, 60, 0.25);
+  
   /* Fonts */
   --font-sans: 'Outfit', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   --font-serif: 'Source Serif 4', Georgia, serif;
@@ -37,6 +55,53 @@
   
   /* Transitions */
   --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-primary: #E8EFE5;
+    --color-primary-light: #9BC085;
+    --color-primary-dark: #0A1308;
+    --color-accent: #88B274;
+    --color-accent-hover: #9BC085;
+    --color-bg: #101B0C;
+    --color-bg-alt: #182613;
+    --color-text: #E8EFE5;
+    --color-text-muted: #98AFA2;
+    --color-border: rgba(155, 192, 133, 0.18);
+    --color-border-hover: rgba(155, 192, 133, 0.38);
+    
+    /* Component Specific Tokens */
+    --text-gradient: linear-gradient(135deg, #E8EFE5 0%, #9BC085 60%, #C3DEC5 100%);
+    --text-gradient-hero: linear-gradient(135deg, #E8EFE5 10%, #9BC085 60%, #C3DEC5 100%);
+    --card-bg: rgba(16, 27, 12, 0.72);
+    --card-shadow: inset 0 20px 20px -20px rgba(255, 255, 255, 0.05), inset 0 0 0 1px rgba(255, 255, 255, 0.05), 0 8px 32px rgba(0, 0, 0, 0.3);
+    --btn-shadow: rgba(136, 178, 116, 0.3);
+    --btn-primary-gradient: linear-gradient(135deg, #6E9B4E 0%, #8EB67A 50%, #6E9B4E 100%);
+    --btn-outline-white-hover-gradient: linear-gradient(135deg, #6E9B4E 0%, #8EB67A 100%);
+    --modal-icon-bg: rgba(155, 192, 133, 0.12);
+    
+    /* SVG Custom Tokens */
+    --chart-text-dark: #9BC085;
+    --chart-text-accent: #B0D89B;
+    --chart-kpi-bg: rgba(24, 38, 20, 0.85);
+    --chart-frame-bg: rgba(16, 27, 12, 0.85);
+    --chart-grid-line: rgba(155, 192, 133, 0.08);
+    --pointer-pulse: rgba(155, 192, 133, 0.25);
+  }
+  
+  body {
+    background-image: linear-gradient(135deg, #1D2A18 0%, #101B0C 50%, #0B1C17 100%) !important;
+  }
+
+  /* SVG map styling in dark mode */
+  .contact-map-svg-mock path[stroke="#FFFFFF"] {
+    stroke: #162413;
+  }
+  .contact-map-svg-mock rect[fill="#E2E8F0"] {
+    fill: #192617;
+    stroke: rgba(155, 192, 133, 0.2);
+  }
 }
 
 /* --- RESET --- */
@@ -72,7 +137,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .text-gradient {
-  background: linear-gradient(135deg, #2E421A 0%, #557A3C 60%, #88A674 100%);
+  background: var(--text-gradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
@@ -81,7 +146,7 @@ h1, h2, h3, h4, h5, h6 {
 h1, .hero-title, .text-gradient-header {
   font-size: var(--fs-h1);
   letter-spacing: -0.02em;
-  background: linear-gradient(135deg, #2E421A 10%, #557A3C 60%, #88A674 100%);
+  background: var(--text-gradient-hero);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
