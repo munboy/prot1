@@ -3,18 +3,18 @@
 /* --- DESIGN TOKENS & VARIABLES --- */
 :root {
   /* Colors */
-  --color-primary: #0F2D59;       /* Vibrant Deep Navy */
-  --color-primary-light: #1A467D; /* Medium Navy */
-  --color-primary-dark: #07152B;  /* Darker Navy */
-  --color-accent: #FF5E2B;        /* Vibrant Orange */
-  --color-accent-hover: #E04B1A;  /* Hover Orange */
+  --color-primary: #2E421A;       /* Deep Forest Olive Green */
+  --color-primary-light: #557A3C; /* Forest Green */
+  --color-primary-dark: #1A280F;  /* Dark Olive */
+  --color-accent: #557A3C;        /* Main Accent (Forest Green) */
+  --color-accent-hover: #42602D;  /* Darker Forest Green */
   --color-bg: #FFFDF4;            /* Glossy Light-Light Yellow / Cream */
-  --color-bg-alt: #FAF7E5;        /* Soft Cream Alt */
-  --color-text: #22262F;          /* Rich Charcoal */
-  --color-text-muted: #5E6977;    /* Slate Grey */
+  --color-bg-alt: #E7EFE3;        /* Soft Pastel Sage-Green */
+  --color-text: #2E421A;          /* Deep Forest Green */
+  --color-text-muted: #526A3B;    /* Olive Slate */
   --color-text-light: #FFFFFF;    /* White text */
-  --color-border: #E8E3CA;        /* Soft Warm Border */
-  --color-border-hover: #D4CDAD;  /* Hover Border */
+  --color-border: rgba(85, 122, 60, 0.15); /* Soft Olive-Green Border */
+  --color-border-hover: rgba(85, 122, 60, 0.35);
   
   /* Fonts */
   --font-sans: 'Outfit', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -58,10 +58,7 @@ body {
   line-height: 1.6;
   color: var(--color-text);
   background-color: var(--color-bg);
-  background-image: 
-    radial-gradient(circle at 10% 15%, rgba(255, 94, 43, 0.12) 0%, transparent 45%),
-    radial-gradient(circle at 85% 20%, rgba(26, 92, 185, 0.12) 0%, transparent 45%),
-    radial-gradient(circle at 50% 75%, rgba(234, 179, 8, 0.08) 0%, transparent 50%);
+  background-image: linear-gradient(135deg, #FFDFD0 0%, #FFF7D6 50%, #D6ECD9 100%);
   background-attachment: fixed;
   overflow-x: hidden;
 }
@@ -75,7 +72,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .text-gradient {
-  background: linear-gradient(135deg, #0F2D59 10%, #2563EB 55%, #FF5E2B 100%);
+  background: linear-gradient(135deg, #2E421A 0%, #557A3C 60%, #88A674 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
@@ -84,7 +81,7 @@ h1, h2, h3, h4, h5, h6 {
 h1, .hero-title, .text-gradient-header {
   font-size: var(--fs-h1);
   letter-spacing: -0.02em;
-  background: linear-gradient(135deg, #0F2D59 10%, #2563EB 55%, #FF5E2B 100%);
+  background: linear-gradient(135deg, #2E421A 10%, #557A3C 60%, #88A674 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
