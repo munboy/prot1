@@ -23,6 +23,10 @@
   background: linear-gradient(rgba(255, 253, 244, 0.55), rgba(255, 253, 244, 0.55)), url('../assets/images/candidates_hero.png?v=12') center/cover no-repeat;
 }
 
+.hero-about {
+  background: linear-gradient(rgba(255, 253, 244, 0.55), rgba(255, 253, 244, 0.55)), url('../assets/images/about_hero.png?v=12') center/cover no-repeat;
+}
+
 .hero-home {
   background: linear-gradient(rgba(255, 253, 244, 0.55), rgba(255, 253, 244, 0.55)), url('../assets/images/clipboard.png?v=12') center/cover no-repeat;
 }
