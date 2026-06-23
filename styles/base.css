@@ -2,6 +2,7 @@
 
 /* --- DESIGN TOKENS & VARIABLES --- */
 :root {
+  color-scheme: light;
   /* Colors */
   --color-primary: #2E421A;       /* Deep Forest Olive Green */
   --color-primary-light: #557A3C; /* Forest Green */
