@@ -11,6 +11,10 @@
   background-color: transparent;
 }
 
+.hero-employers {
+  background: linear-gradient(rgba(255, 253, 244, 0.55), rgba(255, 253, 244, 0.55)), url('../assets/images/employers_hero.png?v=12') center/cover no-repeat;
+}
+
 .hero-home {
   background: linear-gradient(rgba(255, 253, 244, 0.55), rgba(255, 253, 244, 0.55)), url('../assets/images/clipboard.png?v=12') center/cover no-repeat;
 }
