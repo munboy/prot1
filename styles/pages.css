@@ -7,30 +7,38 @@
   overflow: hidden;
 }
 
-.hero .container {
-  position: relative;
-}
-
 .hero-alt {
   background-color: transparent;
 }
 
 .hero-watermark {
   position: absolute;
-  top: 50%;
-  left: -40px; /* starts slightly to the left of the text */
-  transform: translateY(-50%);
-  width: calc(100% + 80px); /* covers both text and chart columns */
-  height: 95%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background-image: url('../assets/images/clipboard.png');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
-  opacity: 0.16; /* visible watermark over the gradient */
+  background-position: 30% center;
+  opacity: 0.16;
   pointer-events: none;
   z-index: 1;
   mix-blend-mode: multiply;
   filter: grayscale(100%) contrast(1.15);
+  
+  /* Smooth radial fade-out in all directions to prevent harsh edges */
+  -webkit-mask-image: radial-gradient(ellipse at 40% 50%, rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 0) 70%);
+  mask-image: radial-gradient(ellipse at 40% 50%, rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 0) 70%);
+}
+
+@media (max-width: 1024px) {
+  .hero-watermark {
+    background-position: center center;
+    -webkit-mask-image: radial-gradient(circle at center, rgba(0, 0, 0, 1) 25%, rgba(0, 0, 0, 0) 75%);
+    mask-image: radial-gradient(circle at center, rgba(0, 0, 0, 1) 25%, rgba(0, 0, 0, 0) 75%);
+    opacity: 0.12;
+  }
 }
 
 .hero-content {
