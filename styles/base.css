@@ -156,3 +156,33 @@ a {
   opacity: 1;
   transform: translateY(0);
 }
+
+/* --- CUSTOM GLOBAL SCROLLBAR --- */
+/* WebKit browsers (Chrome, Safari, Edge, Opera) */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; /* Transparent track so body gradient shines through */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(85, 122, 60, 0.4); /* Semi-transparent forest green */
+  border-radius: 20px;
+  border: 2.5px solid transparent; /* Padding effect */
+  background-clip: padding-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(85, 122, 60, 0.85); /* Solid forest green on hover */
+  border: 2.5px solid transparent;
+  background-clip: padding-box;
+}
+
+/* Firefox browsers */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(85, 122, 60, 0.4) transparent;
+}
