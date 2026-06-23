@@ -12,29 +12,29 @@
 }
 
 .hero-employers {
-  background: linear-gradient(rgba(255, 253, 244, 0.55), rgba(255, 253, 244, 0.55)), url('../assets/images/employers_hero.png?v=12') center/cover no-repeat;
+  background: linear-gradient(rgba(255, 253, 244, 0.55), rgba(255, 253, 244, 0.55)), url('../assets/images/employers_hero.webp?v=21') center/cover no-repeat;
 }
 
 .hero-vacancies {
-  background: linear-gradient(rgba(255, 253, 244, 0.55), rgba(255, 253, 244, 0.55)), url('../assets/images/vacancies_hero.png?v=12') center 35% / cover no-repeat;
+  background: linear-gradient(rgba(255, 253, 244, 0.55), rgba(255, 253, 244, 0.55)), url('../assets/images/vacancies_hero.webp?v=21') center 35% / cover no-repeat;
   padding-top: calc(var(--header-height) + 7rem);
   padding-bottom: 7rem;
 }
 
 .hero-candidates {
-  background: linear-gradient(rgba(255, 253, 244, 0.55), rgba(255, 253, 244, 0.55)), url('../assets/images/candidates_hero.png?v=12') center/cover no-repeat;
+  background: linear-gradient(rgba(255, 253, 244, 0.55), rgba(255, 253, 244, 0.55)), url('../assets/images/candidates_hero.webp?v=21') center/cover no-repeat;
 }
 
 .hero-about {
-  background: linear-gradient(rgba(255, 253, 244, 0.55), rgba(255, 253, 244, 0.55)), url('../assets/images/about_hero.png?v=12') center/cover no-repeat;
+  background: linear-gradient(rgba(255, 253, 244, 0.55), rgba(255, 253, 244, 0.55)), url('../assets/images/about_hero.webp?v=21') center/cover no-repeat;
 }
 
 .hero-contacts {
-  background: linear-gradient(rgba(255, 253, 244, 0.55), rgba(255, 253, 244, 0.55)), url('../assets/images/contacts_hero.png?v=12') center/cover no-repeat;
+  background: linear-gradient(rgba(255, 253, 244, 0.55), rgba(255, 253, 244, 0.55)), url('../assets/images/contacts_hero.webp?v=21') center/cover no-repeat;
 }
 
 .hero-home {
-  background: linear-gradient(rgba(255, 253, 244, 0.55), rgba(255, 253, 244, 0.55)), url('../assets/images/clipboard.png?v=12') center/cover no-repeat;
+  background: linear-gradient(rgba(255, 253, 244, 0.55), rgba(255, 253, 244, 0.55)), url('../assets/images/clipboard.webp?v=21') center/cover no-repeat;
 }
 
 .hero-content {

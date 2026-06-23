@@ -6,10 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Офіційні документи | Кадрове агентство «Кар'єра»</title>
   <meta name="description" content="Офіційні документи, ліцензії, публічна оферта та політика конфіденційності рекрутингового кадрового агентства Кар'єра.">
-  <link rel="stylesheet" href="styles/base.css?v=21">
-  <link rel="stylesheet" href="styles/layout.css?v=21">
-  <link rel="stylesheet" href="styles/components.css?v=21">
-  <link rel="stylesheet" href="styles/pages.css?v=21">
+  <link rel="stylesheet" href="styles/base.css?v=22">
+  <link rel="stylesheet" href="styles/layout.css?v=22">
+  <link rel="stylesheet" href="styles/components.css?v=22">
+  <link rel="stylesheet" href="styles/pages.css?v=22">
+  <!-- Preconnect and Preload for Performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 <body>
 
@@ -53,6 +56,8 @@
     </ul>
     <a href="employers.html#order-form" class="btn btn-primary">Замовити персонал</a>
   </div>
+
+  <main id="main-content">
 
   <!-- HERO SECTION -->
   <section class="hero hero-alt" style="padding-bottom: 3rem;">
@@ -128,6 +133,8 @@
     </div>
   </section>
 
+  </main>
+
   <!-- FOOTER -->
   <footer class="footer">
     <div class="container">
@@ -137,7 +144,7 @@
           <p class="footer-desc">Кадрове рекрутингове агентство «Кар'єра» — ваш надійний партнер у сфері пошуку та підбору персоналу з 2001 року. Допомагаємо будувати успішний бізнес та успішну кар'єру.</p>
         </div>
         <div>
-          <h4 class="footer-heading">Послуги</h4>
+          <h3 class="footer-heading">Послуги</h3>
           <ul class="footer-links">
             <li><a href="employers.html">Роботодавцям</a></li>
             <li><a href="candidates.html">Кандидатам</a></li>
@@ -146,7 +153,7 @@
           </ul>
         </div>
         <div>
-          <h4 class="footer-heading">Компанія</h4>
+          <h3 class="footer-heading">Компанія</h3>
           <ul class="footer-links">
             <li><a href="about.html">Про нас</a></li>
             <li><a href="documents.html">Офіційні документи</a></li>
@@ -155,7 +162,7 @@
           </ul>
         </div>
         <div>
-          <h4 class="footer-heading">Контакти</h4>
+          <h3 class="footer-heading">Контакти</h3>
           <ul class="footer-contact">
             <li>
               <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
@@ -183,7 +190,7 @@
     </div>
   </footer>
 
-  <script src="scripts/main.js"></script>
+  <script src="scripts/main.js" defer></script>
   <script>
     document.addEventListener('DOMContentLoaded', () => {
       // Mock download button interactive state change
