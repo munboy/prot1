@@ -16,7 +16,9 @@
 }
 
 .hero-vacancies {
-  background: linear-gradient(rgba(255, 253, 244, 0.55), rgba(255, 253, 244, 0.55)), url('../assets/images/vacancies_hero.png?v=12') center/cover no-repeat;
+  background: linear-gradient(rgba(255, 253, 244, 0.55), rgba(255, 253, 244, 0.55)), url('../assets/images/vacancies_hero.png?v=12') center 35% / cover no-repeat;
+  padding-top: calc(var(--header-height) + 7rem);
+  padding-bottom: 7rem;
 }
 
 .hero-candidates {
