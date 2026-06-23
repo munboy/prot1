@@ -14,15 +14,15 @@
 .hero-watermark {
   position: absolute;
   top: 50%;
-  right: 5%;
+  left: 0;
   transform: translateY(-50%);
-  width: 580px;
-  height: 380px;
+  width: 60%;
+  height: 85%;
   background-image: url('../assets/images/clipboard.png');
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center;
-  opacity: 0.08; /* very subtle translucent watermark */
+  background-position: left center;
+  opacity: 0.18; /* clearly visible watermark but gradient is still dominant */
   pointer-events: none;
   z-index: 1;
   mix-blend-mode: multiply;
