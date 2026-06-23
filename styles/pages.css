@@ -840,46 +840,6 @@
   animation: fadeInArea 2.5s ease-out forwards;
 }
 
-.svg-bar {
-  fill: url(#gradient-primary);
-  animation: growBar 1.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
-  transform-origin: bottom;
-}
-
-.svg-bar-accent {
-  fill: url(#gradient-accent);
-  animation: growBar 1.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
-  transform-origin: bottom;
-}
-
-.svg-node-glowing {
-  fill: var(--color-bg);
-  stroke: var(--color-accent);
-  stroke-width: 3;
-  filter: drop-shadow(0px 0px 8px var(--color-accent));
-  animation: pulseNode 2s infinite alternate;
-}
-
-.svg-node-primary {
-  fill: var(--color-bg);
-  stroke: var(--color-primary);
-  stroke-width: 3;
-  filter: drop-shadow(0px 0px 8px var(--color-primary));
-  animation: pulseNode 2s infinite alternate 0.5s;
-}
-
-.svg-card-bg {
-  fill: var(--color-bg);
-  stroke: var(--color-border);
-  stroke-width: 1;
-  filter: drop-shadow(0px 10px 20px rgba(26, 42, 68, 0.05));
-  transition: var(--transition);
-}
-
-.svg-card-bg:hover {
-  stroke: var(--color-border-hover);
-  filter: drop-shadow(0px 15px 25px rgba(26, 42, 68, 0.08));
-}
 
 /* Animations keyframes */
 @keyframes drawPath {
@@ -898,15 +858,6 @@
   to { opacity: 0.15; }
 }
 
-@keyframes growBar {
-  from { transform: scaleY(0); }
-  to { transform: scaleY(1); }
-}
-
-@keyframes pulseNode {
-  from { r: 6; stroke-width: 3; }
-  to { r: 8; stroke-width: 4; }
-}
 
 /* Collapsible Partners List */
 .partners-collapse {
